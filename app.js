@@ -59,7 +59,7 @@ function renderStage({focus=false}={}){
  $('#official-criteria').replaceChildren();
  const original=exactCriteria[s.gate.toLowerCase()];
  if(original){original.forEach(t=>{let p=document.createElement('p');p.textContent=t;$('#official-criteria').append(p);});}
- else{const p=document.createElement('p');p.textContent='Повне формулювання доступне у White Paper, розділ «Venture lifecycle», підрозділ «Критерії переходу».';const a=document.createElement('a');a.href='assets/venture-layer-white-paper.pdf?v=20261026-references#page=8';a.target='_blank';a.rel='noopener';a.textContent='Відкрити критерії у документі ↗';$('#official-criteria').append(p,a);}
+ else{const p=document.createElement('p');p.textContent='Повне формулювання доступне у White Paper, розділ «Venture lifecycle», підрозділ «Критерії переходу».';const a=document.createElement('a');a.href='assets/venture-layer-white-paper.pdf?v=20261026-references2#page=8';a.target='_blank';a.rel='noopener';a.textContent='Відкрити критерії у документі ↗';$('#official-criteria').append(p,a);}
  $('.official-rule').open=false;
  $('#stage-panel').classList.remove('stage-arrive');void $('#stage-panel').offsetWidth;$('#stage-panel').classList.add('stage-arrive');
  if(focus)$(`#g${state.stage+1}`).focus({preventScroll:true});remember();

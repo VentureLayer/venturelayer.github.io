@@ -54,7 +54,7 @@
   if(a.hash.startsWith('#reference-')&&!location.hash.startsWith('#reference-'))sourceHasOrigin=true;
   prepare(a.hash);
  },true);
- addEventListener('hashchange',()=>prepare(location.hash));
+ addEventListener('hashchange',()=>{const target=prepare(location.hash);if(target)requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'instant'}));});
  const initial=prepare(location.hash);
  if(initial)requestAnimationFrame(()=>initial.scrollIntoView({block:'start',behavior:'instant'}));
  document.addEventListener('venture:sources-ready',()=>{const t=prepare(location.hash);if(t&&location.hash.startsWith('#reference-'))t.scrollIntoView({block:'start',behavior:'instant'});});
@@ -67,7 +67,7 @@
   const before=source.substring(0,index);
   return /^(?:отримати|виконувати|реалізувати|прийняти|забезпечити|працювати|ширшого|рішення|перевірки|розвитку|залучити|продовжувати|продовжити|продовження|створити|розгляду|має)(?![\p{L}\p{N}_])/u.test(next)||/(?:принципов[а-яіїєґ]*|системн[а-яіїєґ]*|інституційн[а-яіїєґ]*|його|її|свої|їхні)\s+$/iu.test(before);
  }
- fetch('assets/reference-map.json?v=20261026-references').then(r=>{if(!r.ok)throw new Error('reference-map');return r.json();}).then(refs=>{
+ fetch('assets/reference-map.json?v=20261026-references2').then(r=>{if(!r.ok)throw new Error('reference-map');return r.json();}).then(refs=>{
   const byAlias=new Map();
   refs.forEach(ref=>ref.aliases.forEach(alias=>byAlias.set(alias.toLocaleLowerCase('uk-UA'),ref)));
   const aliases=[...byAlias.keys()].sort((a,b)=>b.length-a.length);
