@@ -1,0 +1,620 @@
+[
+  {
+    "key": "g1",
+    "title": "G1 · Ideation",
+    "aliases": [
+      "go на G1",
+      "go G1",
+      "G1 Screening",
+      "G1",
+      "Ideation"
+    ],
+    "web": "#g1",
+    "word": "VL_03_G1"
+  },
+  {
+    "key": "g2",
+    "title": "G2 · Validation",
+    "aliases": [
+      "go на G2",
+      "go G2",
+      "G2 Problem fit",
+      "G2",
+      "Validation"
+    ],
+    "web": "#g2",
+    "word": "VL_03_G2"
+  },
+  {
+    "key": "g3",
+    "title": "G3 · Creation",
+    "aliases": [
+      "go на G3",
+      "go G3",
+      "G3 Evidence",
+      "G3",
+      "Creation"
+    ],
+    "web": "#g3",
+    "word": "VL_03_G3"
+  },
+  {
+    "key": "g4",
+    "title": "G4 · Spin out",
+    "aliases": [
+      "go на G4",
+      "go G4",
+      "G4 Ownership",
+      "G4",
+      "Spin out",
+      "Spin-out",
+      "Spin out"
+    ],
+    "web": "#g4",
+    "word": "VL_03_G4"
+  },
+  {
+    "key": "layer",
+    "title": "Venture Layer",
+    "aliases": [
+      "Venture Layer",
+      "Layer"
+    ],
+    "web": "#layer-intro",
+    "word": "VL_Layer"
+  },
+  {
+    "key": "managing",
+    "title": "Managing Venture Lead",
+    "aliases": [
+      "Managing Venture Lead",
+      "Managing Lead"
+    ],
+    "web": "#role-managing",
+    "word": "VL_TermManaging"
+  },
+  {
+    "key": "team",
+    "title": "Team Lead",
+    "aliases": [
+      "Team Lead"
+    ],
+    "web": "#role-team",
+    "word": "VL_TermTeamLead"
+  },
+  {
+    "key": "lead",
+    "title": "Venture Lead",
+    "aliases": [
+      "Venture Leads",
+      "Venture Lead",
+      "Leads",
+      "Lead"
+    ],
+    "web": "#role-lead",
+    "word": "VL_TermLead"
+  },
+  {
+    "key": "fellowship",
+    "title": "Venture Fellowship",
+    "aliases": [
+      "Venture Fellowship",
+      "Fellowship"
+    ],
+    "web": "#role-fellow",
+    "word": "VL_TermFellowship"
+  },
+  {
+    "key": "fellow",
+    "title": "Venture Fellow",
+    "aliases": [
+      "Venture Fellow",
+      "Fellows",
+      "Fellow"
+    ],
+    "web": "#role-fellow",
+    "word": "VL_TermFellow"
+  },
+  {
+    "key": "training",
+    "title": "Training Partner",
+    "aliases": [
+      "Training Partner",
+      "освітній партнер"
+    ],
+    "web": "#role-training",
+    "word": "VL_TermTraining"
+  },
+  {
+    "key": "academic",
+    "title": "Academic Partner",
+    "aliases": [
+      "Academic Partner"
+    ],
+    "web": "#role-academic",
+    "word": "VL_TermAcademic"
+  },
+  {
+    "key": "business",
+    "title": "Business Partner",
+    "aliases": [
+      "Business Partner"
+    ],
+    "web": "#role-business",
+    "word": "VL_TermBusiness"
+  },
+  {
+    "key": "board",
+    "title": "Supervisory Board",
+    "aliases": [
+      "Supervisory Board",
+      "Board"
+    ],
+    "web": "#role-board",
+    "word": "VL_TermBoard"
+  },
+  {
+    "key": "opportunity",
+    "title": "Можливість",
+    "aliases": [
+      "статус можливості",
+      "opportunity",
+      "можливість",
+      "можливості",
+      "можливістю",
+      "можливостей",
+      "можливостями"
+    ],
+    "web": "#term-opportunity",
+    "word": "VL_TermOpportunity"
+  },
+  {
+    "key": "venture",
+    "title": "Venture",
+    "aliases": [
+      "ventures",
+      "venture"
+    ],
+    "web": "#term-venture",
+    "word": "VL_TermVenture"
+  },
+  {
+    "key": "initiator",
+    "title": "Ініціатор",
+    "aliases": [
+      "ініціатор",
+      "ініціатора",
+      "ініціатором",
+      "ініціаторів",
+      "ініціатори"
+    ],
+    "web": "#term-initiator",
+    "word": "VL_TermInitiator"
+  },
+  {
+    "key": "participant",
+    "title": "Учасник",
+    "aliases": [
+      "учасник команди",
+      "учасника команди",
+      "учасником команди",
+      "учасників команди",
+      "учасники команди",
+      "учасників команд",
+      "учасник проєкту",
+      "учасника проєкту",
+      "учасників проєкту"
+    ],
+    "web": "#role-team",
+    "word": "VL_TermParticipant"
+  },
+  {
+    "key": "portfolio",
+    "title": "Портфель",
+    "aliases": [
+      "портфель",
+      "портфеля",
+      "портфелів",
+      "портфелі",
+      "портфелями",
+      "портфелем"
+    ],
+    "web": "#term-portfolio",
+    "word": "VL_TermPortfolio"
+  },
+  {
+    "key": "mandate",
+    "title": "Мандат",
+    "aliases": [
+      "мандат",
+      "мандата",
+      "мандату",
+      "мандатів",
+      "мандати",
+      "мандатом",
+      "мандатами"
+    ],
+    "web": "#term-mandate",
+    "word": "VL_TermMandate"
+  },
+  {
+    "key": "stage",
+    "title": "Стадія",
+    "aliases": [
+      "стадія",
+      "стадії",
+      "стадію",
+      "стадій",
+      "стадіями",
+      "стадією"
+    ],
+    "web": "#term-stage",
+    "word": "VL_TermStage"
+  },
+  {
+    "key": "interval",
+    "title": "Інтервал стадії",
+    "aliases": [
+      "інтервал стадії",
+      "інтервали стадій",
+      "інтервал",
+      "інтервалу",
+      "інтервалів",
+      "інтервали",
+      "інтервалом"
+    ],
+    "web": "#term-interval",
+    "word": "VL_TermInterval"
+  },
+  {
+    "key": "gate",
+    "title": "Точка рішення",
+    "aliases": [
+      "точка рішення",
+      "точки рішення",
+      "точці рішення",
+      "точкою рішення",
+      "точок рішення",
+      "gate"
+    ],
+    "web": "#term-gate",
+    "word": "VL_TermGate"
+  },
+  {
+    "key": "risk",
+    "title": "Ризик",
+    "aliases": [
+      "ризик",
+      "ризику",
+      "ризиків",
+      "ризики",
+      "ризиком",
+      "ризиками"
+    ],
+    "web": "#term-risk",
+    "word": "VL_TermRisk"
+  },
+  {
+    "key": "registry",
+    "title": "Спільний реєстр",
+    "aliases": [
+      "спільний реєстр",
+      "спільного реєстру",
+      "спільному реєстрі",
+      "реєстр"
+    ],
+    "web": "#term-registry",
+    "word": "VL_TermRegistry"
+  },
+  {
+    "key": "journal",
+    "title": "Журнал venture",
+    "aliases": [
+      "Журнал venture",
+      "журнал можливості",
+      "журнал",
+      "журналі",
+      "журналу",
+      "журналів",
+      "журнали"
+    ],
+    "web": "#journal",
+    "word": "VL_03_journal"
+  },
+  {
+    "key": "venture-team",
+    "title": "Команда venture",
+    "aliases": [
+      "Команда venture",
+      "Команди venture"
+    ],
+    "web": "#role-team",
+    "word": "VL_TermTeam"
+  },
+  {
+    "key": "risk-kinds",
+    "title": "Ризики попиту та здійсненності",
+    "aliases": [
+      "ризик попиту",
+      "ризику попиту",
+      "ризик здійсненності",
+      "ризику здійсненності"
+    ],
+    "web": "#risks",
+    "word": "VL_03_RiskKinds"
+  },
+  {
+    "key": "organisation",
+    "title": "Організаційна складова Venture Layer",
+    "aliases": [
+      "організаційні складові",
+      "організаційна складова Venture Layer"
+    ],
+    "web": "#people",
+    "word": "VL_TermOrganisation"
+  },
+  {
+    "key": "legal",
+    "title": "Юридичний висновок G4",
+    "aliases": [
+      "юридичний висновок",
+      "юридичного висновку"
+    ],
+    "web": "#legal-g4",
+    "word": "VL_07_legal"
+  },
+  {
+    "key": "independence",
+    "title": "Операційна самостійність",
+    "aliases": [
+      "операційна самостійність",
+      "операційної самостійності"
+    ],
+    "web": "#g4",
+    "word": "VL_03_G4"
+  },
+  {
+    "key": "founder-discovery",
+    "title": "Founder discovery",
+    "aliases": [
+      "founder discovery"
+    ],
+    "web": "#term-founder-discovery",
+    "word": "VL_TermFounderDiscovery"
+  },
+  {
+    "key": "portfolio-review",
+    "title": "Portfolio review",
+    "aliases": [
+      "portfolio review"
+    ],
+    "web": "#term-portfolio-review",
+    "word": "VL_08_7"
+  },
+  {
+    "key": "evidence",
+    "title": "Докази",
+    "aliases": [
+      "докази",
+      "доказів",
+      "доказ",
+      "доказами"
+    ],
+    "web": "#evidence",
+    "word": "VL_03_criteria"
+  },
+  {
+    "key": "go",
+    "title": "go",
+    "aliases": [
+      "go"
+    ],
+    "web": "#decision-go",
+    "word": "VL_DecisionGo"
+  },
+  {
+    "key": "pass",
+    "title": "pass",
+    "aliases": [
+      "pass"
+    ],
+    "web": "#decision-pass",
+    "word": "VL_DecisionPass"
+  },
+  {
+    "key": "recycle",
+    "title": "recycle",
+    "aliases": [
+      "recycle"
+    ],
+    "web": "#decision-recycle",
+    "word": "VL_DecisionRecycle"
+  },
+  {
+    "key": "pivot",
+    "title": "pivot",
+    "aliases": [
+      "pivot"
+    ],
+    "web": "#decision-pivot",
+    "word": "VL_DecisionPivot"
+  },
+  {
+    "key": "veto",
+    "title": "Право вето",
+    "aliases": [
+      "право вето",
+      "права вето",
+      "вето"
+    ],
+    "web": "#board-rules",
+    "word": "VL_06_decisions"
+  },
+  {
+    "key": "team-bonus",
+    "title": "Командний бонус",
+    "aliases": [
+      "командний бонус",
+      "командного бонусу",
+      "командним бонусом",
+      "командні бонуси"
+    ],
+    "web": "#pilot-bonuses",
+    "word": "VL_08_8"
+  },
+  {
+    "key": "criteria",
+    "title": "Критерії переходу",
+    "aliases": [
+      "критерії переходу",
+      "критеріїв переходу"
+    ],
+    "web": "#journey",
+    "word": "VL_03_criteria"
+  },
+  {
+    "key": "running-lean",
+    "title": "Running Lean",
+    "aliases": [
+      "Running Lean",
+      "Scaling Lean"
+    ],
+    "web": "#reference-r1",
+    "word": "VL_R1"
+  },
+  {
+    "key": "customer-development",
+    "title": "Customer Development",
+    "aliases": [
+      "Customer Development"
+    ],
+    "web": "#reference-r2",
+    "word": "VL_R2"
+  },
+  {
+    "key": "white-paper",
+    "title": "White Paper",
+    "aliases": [
+      "White Paper"
+    ],
+    "web": "#reference-whitepaper",
+    "word": "VL_01"
+  },
+  {
+    "key": "r1",
+    "title": "Джерело R1",
+    "aliases": [
+      "R1"
+    ],
+    "web": "#reference-r1",
+    "word": "VL_R1"
+  },
+  {
+    "key": "r2",
+    "title": "Джерело R2",
+    "aliases": [
+      "R2"
+    ],
+    "web": "#reference-r2",
+    "word": "VL_R2"
+  },
+  {
+    "key": "r3",
+    "title": "Джерело R3",
+    "aliases": [
+      "R3"
+    ],
+    "web": "#reference-r3",
+    "word": "VL_R3"
+  },
+  {
+    "key": "r4",
+    "title": "Джерело R4",
+    "aliases": [
+      "R4"
+    ],
+    "web": "#reference-r4",
+    "word": "VL_R4"
+  },
+  {
+    "key": "r5",
+    "title": "Джерело R5",
+    "aliases": [
+      "R5"
+    ],
+    "web": "#reference-r5",
+    "word": "VL_R5"
+  },
+  {
+    "key": "r6",
+    "title": "Джерело R6",
+    "aliases": [
+      "R6"
+    ],
+    "web": "#reference-r6",
+    "word": "VL_R6"
+  },
+  {
+    "key": "r7",
+    "title": "Джерело R7",
+    "aliases": [
+      "R7"
+    ],
+    "web": "#reference-r7",
+    "word": "VL_R7"
+  },
+  {
+    "key": "r8",
+    "title": "Джерело R8",
+    "aliases": [
+      "R8"
+    ],
+    "web": "#reference-r8",
+    "word": "VL_R8"
+  },
+  {
+    "key": "r9",
+    "title": "Джерело R9",
+    "aliases": [
+      "R9"
+    ],
+    "web": "#reference-r9",
+    "word": "VL_R9"
+  },
+  {
+    "key": "r10",
+    "title": "Джерело R10",
+    "aliases": [
+      "R10"
+    ],
+    "web": "#reference-r10",
+    "word": "VL_R10"
+  },
+  {
+    "key": "r11",
+    "title": "Джерело R11",
+    "aliases": [
+      "R11"
+    ],
+    "web": "#reference-r11",
+    "word": "VL_R11"
+  },
+  {
+    "key": "r12",
+    "title": "Джерело R12",
+    "aliases": [
+      "R12"
+    ],
+    "web": "#reference-r12",
+    "word": "VL_R12"
+  },
+  {
+    "key": "r13",
+    "title": "Джерело R13",
+    "aliases": [
+      "R13"
+    ],
+    "web": "#reference-r13",
+    "word": "VL_R13"
+  }
+]

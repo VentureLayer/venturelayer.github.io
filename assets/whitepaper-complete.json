@@ -1,7 +1,7 @@
 {
   "title": "Venture Layer White Paper",
   "edition": "2026-10-26",
-  "sha256": "db1cdff2c66580e4bdad9ff1e9ff6076f075eface44910694c3130eb2c4847e9",
+  "sha256": "1bbe8e1ea9a1a9058e2d31405fb1f9d1c1699ad703419b0b67d2132e2a87a0c6",
   "blocks": [
     {
       "type": "paragraph",
@@ -3156,6 +3156,14 @@
     {
       "type": "paragraph",
       "text": "Погоджено $400 фіксованого бонусу на місяць кожному Lead, додаткові $200 кожному за місяць досягнення спільного показника та надбавку Managing Venture Lead $200 на місяць. Для трьох Leads за шість місяців фіксована частина становить $8 400, максимальний фонд із командним бонусом за всі шість місяців — $12 000. Оновлено календар і розрахунки; попередня формула 22,8b зберігається лише в історичних записах."
+    },
+    {
+      "type": "paragraph",
+      "text": "Запис 53 · 26 жовтня 2026 року · Прямі відсилання та визначення"
+    },
+    {
+      "type": "paragraph",
+      "text": "Додано внутрішні посилання зі згадок G1–G4, ролей, рішень, термінів та методичних підходів до відповідних критеріїв, визначень і джерел. Наявні посилання та зміст основного тексту збережено. У PDF переходи доступні як внутрішні гіперпосилання."
     }
   ],
   "complete_headers_footers_and_notes_xml": {
@@ -3171,5 +3179,5515 @@
     "word/header6.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:hdr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs><w:pBdr><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D8D9D1\" w:space=\"6\"/></w:pBdr></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>VENTURE LAYER</w:t></w:r><w:r><w:tab/><w:t>WHITE PAPER · 01–10</w:t></w:r></w:p></w:hdr>",
     "word/footer5.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs></w:pPr><w:r><w:t>Bohdan Didenko</w:t><w:tab/></w:r><w:fldSimple w:instr=\"PAGE\"/></w:p></w:ftr>",
     "word/footer6.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs></w:pPr><w:r><w:t>Bohdan Didenko</w:t><w:tab/></w:r><w:fldSimple w:instr=\"PAGE\"/></w:p></w:ftr>"
-  }
+  },
+  "internal_references": [
+    {
+      "anchor": "VL_01",
+      "relationship": null,
+      "text": "01   Vision and foundational principles"
+    },
+    {
+      "anchor": "VL_02",
+      "relationship": null,
+      "text": "02   Sources of ventures"
+    },
+    {
+      "anchor": "VL_glossary",
+      "relationship": null,
+      "text": "—   Глосарій"
+    },
+    {
+      "anchor": "VL_03",
+      "relationship": null,
+      "text": "03   Venture lifecycle"
+    },
+    {
+      "anchor": "VL_04",
+      "relationship": null,
+      "text": "04   Venture Leads and Fellowship"
+    },
+    {
+      "anchor": "VL_05",
+      "relationship": null,
+      "text": "05   Teams and participants"
+    },
+    {
+      "anchor": "VL_06",
+      "relationship": null,
+      "text": "06   Governance and partnerships"
+    },
+    {
+      "anchor": "VL_07",
+      "relationship": null,
+      "text": "07   Money and participation"
+    },
+    {
+      "anchor": "VL_08",
+      "relationship": null,
+      "text": "08   Pilot"
+    },
+    {
+      "anchor": "VL_09",
+      "relationship": null,
+      "text": "09   Risks"
+    },
+    {
+      "anchor": "VL_10",
+      "relationship": null,
+      "text": "10   Beyond the pilot"
+    },
+    {
+      "anchor": "VL_A",
+      "relationship": null,
+      "text": "A   Джерела"
+    },
+    {
+      "anchor": "VL_B",
+      "relationship": null,
+      "text": "B   Журнал змін"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливість"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermParticipant",
+      "relationship": null,
+      "text": "учасник проєкту"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризик"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостями"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_02",
+      "relationship": null,
+      "text": "Sources of ventures"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказами"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Критерії переходу"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "Venture"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціатор"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermFounderDiscovery",
+      "relationship": null,
+      "text": "founder discovery"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливість"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFounderDiscovery",
+      "relationship": null,
+      "text": "founder discovery"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціатором"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "Можливість"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журнал"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "Ideation"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціатора"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціатора"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "go на G2"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливість"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливість"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "go на G2"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_DecisionPivot",
+      "relationship": null,
+      "text": "pivot"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливістю"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливістю"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливістю"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалом"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точкою рішення"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливістю"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_DecisionPivot",
+      "relationship": null,
+      "text": "Pivot"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадію"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризику"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "Spin out"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадія"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціаторів"
+    },
+    {
+      "anchor": "VL_TermParticipant",
+      "relationship": null,
+      "text": "учасників команд"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатом"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Venture Fellowship"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Venture Fellow"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатом"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_06_powers",
+      "relationship": null,
+      "text": "Компетенція Board"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "Журнал venture"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціаторів"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "вето"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "операційна самостійність"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "Ideation"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "Creation"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "Spin out"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точкою рішення"
+    },
+    {
+      "anchor": "VL_R12",
+      "relationship": null,
+      "text": "R12"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "Стадія"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "Точка рішення"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "Ideation"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1 Screening"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціатор"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "G2 Problem fit"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "Creation"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3 Evidence"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "Spin out"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4 Ownership"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "Інтервал"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "Ideation"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "Точка рішення"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливість"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_RiskKinds",
+      "relationship": null,
+      "text": "ризику здійсненності"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_DecisionPivot",
+      "relationship": null,
+      "text": "pivot"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Докази"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціатор"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_05_team",
+      "relationship": null,
+      "text": "Команда та перевірки"
+    },
+    {
+      "anchor": "VL_R2",
+      "relationship": null,
+      "text": "R2"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1"
+    },
+    {
+      "anchor": "VL_03_RiskKinds",
+      "relationship": null,
+      "text": "ризик здійсненності"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_R1",
+      "relationship": null,
+      "text": "Running Lean"
+    },
+    {
+      "anchor": "VL_R2",
+      "relationship": null,
+      "text": "Customer Development"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Докази"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціатором"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermParticipant",
+      "relationship": null,
+      "text": "учасника команди"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_R5",
+      "relationship": null,
+      "text": "R5"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_07_legal",
+      "relationship": null,
+      "text": "юридичного висновку"
+    },
+    {
+      "anchor": "VL_07_legal",
+      "relationship": null,
+      "text": "Юридичний висновок G4"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "критерії переходу"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "критерії переходу"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точка рішення"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "G2"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_DecisionRecycle",
+      "relationship": null,
+      "text": "recycle"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_DecisionRecycle",
+      "relationship": null,
+      "text": "recycle"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "Можливість"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадію"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "Go на G4"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадію"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалом"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точці рішення"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадію"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "G2"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_DecisionRecycle",
+      "relationship": null,
+      "text": "recycle"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "Ухвалення рішень і право вето"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "вето"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_DecisionRecycle",
+      "relationship": null,
+      "text": "recycle"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "критеріїв переходу"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "Стадія"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "Ideation"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "Creation"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "Spin out"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "Інтервал стадії"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервали"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелів"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалів"
+    },
+    {
+      "anchor": "VL_08_3",
+      "relationship": null,
+      "text": "Конфігурація та календар"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_06_closing",
+      "relationship": null,
+      "text": "Завершення програми"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливість"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журнал"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точці рішення"
+    },
+    {
+      "anchor": "VL_08_3",
+      "relationship": null,
+      "text": "Конфігурація та календар"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "критеріїв переходу"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалів"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "Журнал"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журнали"
+    },
+    {
+      "anchor": "VL_TermRegistry",
+      "relationship": null,
+      "text": "спільного реєстру"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "Журнал venture"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "Ініціатор"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFounderDiscovery",
+      "relationship": null,
+      "text": "founder discovery"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "Ризики"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказами"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "Стадії"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервали"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадія"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадій"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точки рішення"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_05_contributions",
+      "relationship": null,
+      "text": "Облік внесків"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадіями"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "Журнал"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermRegistry",
+      "relationship": null,
+      "text": "Спільний реєстр"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermRegistry",
+      "relationship": null,
+      "text": "Спільний реєстр"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказами"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "Журнали"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Venture Fellowship"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандат"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Venture Fellowship"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журнали"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналів"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellow"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellow"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналів"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандат"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellow"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellow"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатом"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Venture Fellow"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатом"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFounderDiscovery",
+      "relationship": null,
+      "text": "founder discovery"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журнал venture"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_decisions",
+      "relationship": null,
+      "text": "Рішення"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервали стадій"
+    },
+    {
+      "anchor": "VL_03_resource",
+      "relationship": null,
+      "text": "Ресурс"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_08_3",
+      "relationship": null,
+      "text": "Конфігурація та календар"
+    },
+    {
+      "anchor": "VL_08_11",
+      "relationship": null,
+      "text": "Оцінювання експерименту"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандат"
+    },
+    {
+      "anchor": "VL_TermRegistry",
+      "relationship": null,
+      "text": "спільний реєстр"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелі"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостями"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалів"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_DecisionRecycle",
+      "relationship": null,
+      "text": "recycle"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналу"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "Інтервали"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "Журнали"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журнали"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадій"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалів"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "командного бонусу"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_07_finance",
+      "relationship": null,
+      "text": "Фінансування програми"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "командного бонусу"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказ"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Командний бонус"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellow"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал стадії"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатом"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "Ухвалення рішень і право вето"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_05_composition",
+      "relationship": null,
+      "text": "Зміна складу"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_R1",
+      "relationship": null,
+      "text": "R1"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналу"
+    },
+    {
+      "anchor": "VL_07_economic",
+      "relationship": null,
+      "text": "Участь у створеній вартості"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_TermOrganisation",
+      "relationship": null,
+      "text": "організаційні складові"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermInitiator",
+      "relationship": null,
+      "text": "ініціаторів"
+    },
+    {
+      "anchor": "VL_TermParticipant",
+      "relationship": null,
+      "text": "учасників команд"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "вето"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermFounderDiscovery",
+      "relationship": null,
+      "text": "founder discovery"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_04_mandate",
+      "relationship": null,
+      "text": "Мандати"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_04_assessment",
+      "relationship": null,
+      "text": "Оцінювання"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелів"
+    },
+    {
+      "anchor": "VL_04_reward",
+      "relationship": null,
+      "text": "Винагорода"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "командного бонусу"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "Go на G4"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "операційної самостійності"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "вето"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_08_2",
+      "relationship": null,
+      "text": "Партнери та відповідальність"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "право вето"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_R6",
+      "relationship": null,
+      "text": "R6"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризики"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "вето"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go G4"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_04_reward",
+      "relationship": null,
+      "text": "Винагорода"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_R9",
+      "relationship": null,
+      "text": "R9"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_07_legal",
+      "relationship": null,
+      "text": "Юридичний висновок"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4"
+    },
+    {
+      "anchor": "VL_R10",
+      "relationship": null,
+      "text": "R10"
+    },
+    {
+      "anchor": "VL_R11",
+      "relationship": null,
+      "text": "R11"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "Spin out"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелями"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_R8",
+      "relationship": null,
+      "text": "R8"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "Ухвалення рішень і право вето"
+    },
+    {
+      "anchor": "VL_08_4",
+      "relationship": null,
+      "text": "Готовність до запуску"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатами"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "Мандат"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфель"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "Інтервали стадій"
+    },
+    {
+      "anchor": "VL_08_7",
+      "relationship": null,
+      "text": "Portfolio review"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_08_14",
+      "relationship": null,
+      "text": "Підсумок пілоту та подальші рішення"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go G4"
+    },
+    {
+      "anchor": "VL_03_after_exit",
+      "relationship": null,
+      "text": "Перегляд після виходу"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелі"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервали"
+    },
+    {
+      "anchor": "VL_08_14",
+      "relationship": null,
+      "text": "Підсумок пілоту та подальші рішення"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатами"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_08_2",
+      "relationship": null,
+      "text": "Партнери та відповідальність"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_07_finance",
+      "relationship": null,
+      "text": "Фінансування програми"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналів"
+    },
+    {
+      "anchor": "VL_08_10",
+      "relationship": null,
+      "text": "Дані та історичне порівняння"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_08_11",
+      "relationship": null,
+      "text": "Оцінювання експерименту"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_02_entry",
+      "relationship": null,
+      "text": "Common entry rule"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_R4",
+      "relationship": null,
+      "text": "R4"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "Validation"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Докази"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Критерії переходу"
+    },
+    {
+      "anchor": "VL_03_G2",
+      "relationship": null,
+      "text": "G2"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналі venture"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказів"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Критерії переходу"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказ"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точки рішення"
+    },
+    {
+      "anchor": "VL_03_decisions",
+      "relationship": null,
+      "text": "Рішення"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go на G4"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Докази"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалом"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелів"
+    },
+    {
+      "anchor": "VL_08_7",
+      "relationship": null,
+      "text": "Portfolio review"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелі"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точки рішення"
+    },
+    {
+      "anchor": "VL_R3",
+      "relationship": null,
+      "text": "R3"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Leads"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Командний бонус"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "командним бонусом"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "командним бонусом"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "командний бонус"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Supervisory Board"
+    },
+    {
+      "anchor": "VL_04_reward",
+      "relationship": null,
+      "text": "Винагорода"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "go G3"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "командний бонус"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "ventures"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellow"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливості"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_04_fellowship",
+      "relationship": null,
+      "text": "Venture Fellowship"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналів"
+    },
+    {
+      "anchor": "VL_TermRegistry",
+      "relationship": null,
+      "text": "спільного реєстру"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналів"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_DecisionRecycle",
+      "relationship": null,
+      "text": "recycle"
+    },
+    {
+      "anchor": "VL_DecisionPivot",
+      "relationship": null,
+      "text": "pivot"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадій"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризики"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermAcademic",
+      "relationship": null,
+      "text": "Academic Partner"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризик"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадія"
+    },
+    {
+      "anchor": "VL_R1",
+      "relationship": null,
+      "text": "R1"
+    },
+    {
+      "anchor": "VL_R13",
+      "relationship": null,
+      "text": "R13"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадій"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "журналів"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадій"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "go G3"
+    },
+    {
+      "anchor": "VL_08_11_participants",
+      "relationship": null,
+      "text": "Результати учасників"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадії"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризики"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_08_9",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандат"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "вето"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_08_6",
+      "relationship": null,
+      "text": "Перевірки та точки рішення"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "Вето"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "go G4"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точок рішення"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точок рішення"
+    },
+    {
+      "anchor": "VL_04_assessment",
+      "relationship": null,
+      "text": "Оцінювання і поновлення мандата"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказ"
+    },
+    {
+      "anchor": "VL_TermOpportunity",
+      "relationship": null,
+      "text": "можливостей"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Venture Layer"
+    },
+    {
+      "anchor": "VL_TermGate",
+      "relationship": null,
+      "text": "точок рішення"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "доказ"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "go G3"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадій"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "ризиків"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфеля"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадіями"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermStage",
+      "relationship": null,
+      "text": "стадій"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "Портфель"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандата"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервалу"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Layer"
+    },
+    {
+      "anchor": "VL_DecisionGo",
+      "relationship": null,
+      "text": "go"
+    },
+    {
+      "anchor": "VL_DecisionPass",
+      "relationship": null,
+      "text": "pass"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_06_powers",
+      "relationship": null,
+      "text": "Компетенція Board"
+    },
+    {
+      "anchor": "VL_09",
+      "relationship": null,
+      "text": "реєстрі ризиків"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Критерії переходу"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_06_closing",
+      "relationship": null,
+      "text": "Завершення програми"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermFellowship",
+      "relationship": null,
+      "text": "Fellowship"
+    },
+    {
+      "anchor": "VL_08_1",
+      "relationship": null,
+      "text": "Предмет експерименту"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандати"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_TermInterval",
+      "relationship": null,
+      "text": "інтервал"
+    },
+    {
+      "anchor": "VL_DecisionRecycle",
+      "relationship": null,
+      "text": "recycle"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандат"
+    },
+    {
+      "anchor": "VL_03_G1",
+      "relationship": null,
+      "text": "G1"
+    },
+    {
+      "anchor": "VL_03_G3",
+      "relationship": null,
+      "text": "G3"
+    },
+    {
+      "anchor": "VL_06_closing",
+      "relationship": null,
+      "text": "Завершення програми"
+    },
+    {
+      "anchor": "VL_TermRisk",
+      "relationship": null,
+      "text": "Ризик"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_04_portfolio",
+      "relationship": null,
+      "text": "Портфель"
+    },
+    {
+      "anchor": "VL_08_11",
+      "relationship": null,
+      "text": "Оцінювання експерименту"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_04_continuity",
+      "relationship": null,
+      "text": "Зміна Venture Lead і безперервність супроводу"
+    },
+    {
+      "anchor": "VL_06_closing",
+      "relationship": null,
+      "text": "Завершення програми"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "докази"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Критерії переходу"
+    },
+    {
+      "anchor": "VL_08_11",
+      "relationship": null,
+      "text": "Оцінювання експерименту"
+    },
+    {
+      "anchor": "VL_06_concerns",
+      "relationship": null,
+      "text": "Звернення учасників"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_08_11",
+      "relationship": null,
+      "text": "Оцінювання експерименту"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_02_external",
+      "relationship": null,
+      "text": "External partners"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Критерії переходу"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "Вето"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermBusiness",
+      "relationship": null,
+      "text": "Business Partner"
+    },
+    {
+      "anchor": "VL_06_decisions",
+      "relationship": null,
+      "text": "Ухвалення рішень і право вето"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4 Ownership"
+    },
+    {
+      "anchor": "VL_08_11",
+      "relationship": null,
+      "text": "Оцінювання експерименту"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_06_conflicts",
+      "relationship": null,
+      "text": "Конфлікти інтересів"
+    },
+    {
+      "anchor": "VL_07_transaction",
+      "relationship": null,
+      "text": "Оформлення інвестиції"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_07_finance",
+      "relationship": null,
+      "text": "Фінансування програми"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_05_contributions",
+      "relationship": null,
+      "text": "Облік внесків"
+    },
+    {
+      "anchor": "VL_07_economic",
+      "relationship": null,
+      "text": "Участь у створеній вартості"
+    },
+    {
+      "anchor": "VL_07_legal",
+      "relationship": null,
+      "text": "Юридичний висновок G4"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_06_closing",
+      "relationship": null,
+      "text": "Завершення програми"
+    },
+    {
+      "anchor": "VL_08_8",
+      "relationship": null,
+      "text": "Бонуси та забезпечення"
+    },
+    {
+      "anchor": "VL_08_14",
+      "relationship": null,
+      "text": "Підсумок пілоту та подальші рішення"
+    },
+    {
+      "anchor": "VL_TermManaging",
+      "relationship": null,
+      "text": "Managing Venture Lead"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_03_journal",
+      "relationship": null,
+      "text": "Журнал venture"
+    },
+    {
+      "anchor": "VL_07_exit",
+      "relationship": null,
+      "text": "Права й матеріали після завершення супроводу"
+    },
+    {
+      "anchor": "VL_08_10",
+      "relationship": null,
+      "text": "Дані та історичне порівняння"
+    },
+    {
+      "anchor": "VL_TermFellow",
+      "relationship": null,
+      "text": "Fellows"
+    },
+    {
+      "anchor": "VL_TermMandate",
+      "relationship": null,
+      "text": "мандатів"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Lead"
+    },
+    {
+      "anchor": "VL_TermTraining",
+      "relationship": null,
+      "text": "Training Partner"
+    },
+    {
+      "anchor": "VL_TermBoard",
+      "relationship": null,
+      "text": "Board"
+    },
+    {
+      "anchor": "VL_08_4",
+      "relationship": null,
+      "text": "Готовність до запуску"
+    },
+    {
+      "anchor": "VL_08_9",
+      "relationship": null,
+      "text": "Підготовка Fellows до мандата"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_TermTeamLead",
+      "relationship": null,
+      "text": "Team Lead"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Lead"
+    },
+    {
+      "anchor": "VL_05_composition",
+      "relationship": null,
+      "text": "Зміна складу"
+    },
+    {
+      "anchor": "VL_TermLead",
+      "relationship": null,
+      "text": "Venture Leads"
+    },
+    {
+      "anchor": "VL_TermPortfolio",
+      "relationship": null,
+      "text": "портфелів"
+    },
+    {
+      "anchor": "VL_08_14",
+      "relationship": null,
+      "text": "Підсумок пілоту та подальші рішення"
+    },
+    {
+      "anchor": "VL_TermVenture",
+      "relationship": null,
+      "text": "venture"
+    },
+    {
+      "anchor": "VL_R12",
+      "relationship": null,
+      "text": "R12"
+    },
+    {
+      "anchor": "VL_Layer",
+      "relationship": null,
+      "text": "Layer"
+    },
+    {
+      "anchor": "VL_R1",
+      "relationship": null,
+      "text": "R1"
+    },
+    {
+      "anchor": "VL_R13",
+      "relationship": null,
+      "text": "R13"
+    },
+    {
+      "anchor": "VL_05_team",
+      "relationship": null,
+      "text": "Команда та перевірки"
+    },
+    {
+      "anchor": "VL_03_criteria",
+      "relationship": null,
+      "text": "Критерії переходу"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId23",
+      "text": "Книги автора"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId24",
+      "text": "O’Reilly Running Lean second edition Problem Interview"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId25",
+      "text": "Ash Maurya Traction is the Goal"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId26",
+      "text": "Scaling Lean видавничий фрагмент через InfoQ"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId27",
+      "text": "Maurya A 3x3x3 Perspective авторський виклад 2017"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId28",
+      "text": "Matthew Pattinson некомерційна модель з вступом Maurya 2018"
+    },
+    {
+      "anchor": "VL_02",
+      "relationship": null,
+      "text": "Sources of ventures"
+    },
+    {
+      "anchor": "VL_03",
+      "relationship": null,
+      "text": "Venture lifecycle"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId29",
+      "text": "Customer Development Model авторський виклад"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId30",
+      "text": "Customer Development Manifesto"
+    },
+    {
+      "anchor": "VL_08_7",
+      "relationship": null,
+      "text": "Portfolio review"
+    },
+    {
+      "anchor": "VL_03_decisions",
+      "relationship": null,
+      "text": "Рішення"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId31",
+      "text": "Cooper 2008 сторінка видавця"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId32",
+      "text": "Michelle Jones What Gatekeeping REALLY is"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId33",
+      "text": "Stage Gate International Six Principles"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId34",
+      "text": "Cooper 2008 повний текст оприлюднений автором"
+    },
+    {
+      "anchor": "VL_08_5",
+      "relationship": null,
+      "text": "початкового добору проєктів"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId35",
+      "text": "Portfolio Management Fundamental for New Product Success"
+    },
+    {
+      "anchor": "VL_03_G4",
+      "relationship": null,
+      "text": "G4"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId36",
+      "text": "Default Alive or Default Dead"
+    },
+    {
+      "anchor": "VL_06_conflicts",
+      "relationship": null,
+      "text": "Конфлікти інтересів"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId37",
+      "text": "The Bad Board Member"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId38",
+      "text": "The Mission Model Canvas"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId39",
+      "text": "SKELAR official website"
+    },
+    {
+      "anchor": "VL_07_transaction",
+      "relationship": null,
+      "text": "Оформлення інвестиції"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId40",
+      "text": "NVCA Model Legal Documents"
+    },
+    {
+      "anchor": "VL_07_legal",
+      "relationship": null,
+      "text": "Юридичний висновок G4"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId41",
+      "text": "Офіційна база законодавства № 2811 IX"
+    },
+    {
+      "anchor": "VL_07_legal",
+      "relationship": null,
+      "text": "Юридичний висновок G4"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId42",
+      "text": "Офіційна база законодавства № 143 V"
+    },
+    {
+      "anchor": "VL_10_results",
+      "relationship": null,
+      "text": "Довгострокові результати"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId43",
+      "text": "GSSN Disrupting the Venture Landscape full PDF"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId44",
+      "text": "Офіційна сторінка видання та оновлення"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId45",
+      "text": "Magenta Book Central Government guidance on evaluation HTML"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId47",
+      "text": "OECD — повне видання"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId48",
+      "text": "World Bank — повне видання"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId49",
+      "text": "European Commission — EUR-Lex"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId50",
+      "text": "IMF — авторський матеріал"
+    },
+    {
+      "anchor": null,
+      "relationship": "rId46",
+      "text": "Матеріал автора"
+    }
+  ],
+  "bookmarks": [
+    "VL_01",
+    "VL_02",
+    "VL_02_entry",
+    "VL_02_external",
+    "VL_03",
+    "VL_03_G1",
+    "VL_03_G2",
+    "VL_03_G3",
+    "VL_03_G4",
+    "VL_03_RiskKinds",
+    "VL_03_after_exit",
+    "VL_03_criteria",
+    "VL_03_decisions",
+    "VL_03_journal",
+    "VL_03_resource",
+    "VL_04",
+    "VL_04_assessment",
+    "VL_04_continuity",
+    "VL_04_fellowship",
+    "VL_04_mandate",
+    "VL_04_portfolio",
+    "VL_04_reward",
+    "VL_05",
+    "VL_05_composition",
+    "VL_05_contributions",
+    "VL_05_team",
+    "VL_06",
+    "VL_06_closing",
+    "VL_06_concerns",
+    "VL_06_conflicts",
+    "VL_06_decisions",
+    "VL_06_partners",
+    "VL_06_powers",
+    "VL_07",
+    "VL_07_economic",
+    "VL_07_exit",
+    "VL_07_finance",
+    "VL_07_investment",
+    "VL_07_legal",
+    "VL_07_transaction",
+    "VL_08",
+    "VL_08_1",
+    "VL_08_10",
+    "VL_08_11",
+    "VL_08_11_participants",
+    "VL_08_12",
+    "VL_08_13",
+    "VL_08_14",
+    "VL_08_2",
+    "VL_08_3",
+    "VL_08_4",
+    "VL_08_5",
+    "VL_08_6",
+    "VL_08_7",
+    "VL_08_8",
+    "VL_08_9",
+    "VL_09",
+    "VL_10",
+    "VL_10_results",
+    "VL_A",
+    "VL_B",
+    "VL_DecisionGo",
+    "VL_DecisionPass",
+    "VL_DecisionPivot",
+    "VL_DecisionRecycle",
+    "VL_Layer",
+    "VL_R1",
+    "VL_R10",
+    "VL_R11",
+    "VL_R12",
+    "VL_R13",
+    "VL_R2",
+    "VL_R3",
+    "VL_R4",
+    "VL_R5",
+    "VL_R6",
+    "VL_R7",
+    "VL_R8",
+    "VL_R9",
+    "VL_TermAcademic",
+    "VL_TermBoard",
+    "VL_TermBusiness",
+    "VL_TermFellow",
+    "VL_TermFellowship",
+    "VL_TermFounderDiscovery",
+    "VL_TermGate",
+    "VL_TermInitiator",
+    "VL_TermInterval",
+    "VL_TermJournal",
+    "VL_TermLead",
+    "VL_TermManaging",
+    "VL_TermMandate",
+    "VL_TermOpportunity",
+    "VL_TermOrganisation",
+    "VL_TermParticipant",
+    "VL_TermPivot",
+    "VL_TermPortfolio",
+    "VL_TermRegistry",
+    "VL_TermRisk",
+    "VL_TermSpinOut",
+    "VL_TermStage",
+    "VL_TermTeam",
+    "VL_TermTeamLead",
+    "VL_TermTraining",
+    "VL_TermVenture",
+    "VL_glossary"
+  ]
 }

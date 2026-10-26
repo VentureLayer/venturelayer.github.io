@@ -44,7 +44,7 @@ let exactCriteria={};
 function renderStage({focus=false}={}){
  const s=stages[state.stage],c=cases[state.source];
  $$('.journey-tabs [data-stage]').forEach(b=>{const active=Number(b.dataset.stage)===state.stage;b.setAttribute('aria-selected',active);b.tabIndex=active?0:-1;});
- $('#stage-panel').setAttribute('aria-labelledby',`tab-${state.stage}`);
+ $('#stage-panel').setAttribute('aria-labelledby',`g${state.stage+1}`);
  $('#stage-count').textContent=`СТАДІЯ 0${state.stage+1} / 04`;
  $('#stage-gate').textContent=`${s.gate} · ${s.label}`;
  $('#stage-title').innerHTML=s.title;$('#stage-intro').textContent=s.intro;
@@ -59,10 +59,10 @@ function renderStage({focus=false}={}){
  $('#official-criteria').replaceChildren();
  const original=exactCriteria[s.gate.toLowerCase()];
  if(original){original.forEach(t=>{let p=document.createElement('p');p.textContent=t;$('#official-criteria').append(p);});}
- else{const p=document.createElement('p');p.textContent='Повне формулювання доступне у White Paper, розділ «Venture lifecycle», підрозділ «Критерії переходу».';const a=document.createElement('a');a.href='assets/venture-layer-white-paper.pdf?v=20261026-remuneration#page=8';a.target='_blank';a.rel='noopener';a.textContent='Відкрити критерії у документі ↗';$('#official-criteria').append(p,a);}
+ else{const p=document.createElement('p');p.textContent='Повне формулювання доступне у White Paper, розділ «Venture lifecycle», підрозділ «Критерії переходу».';const a=document.createElement('a');a.href='assets/venture-layer-white-paper.pdf?v=20261026-references#page=8';a.target='_blank';a.rel='noopener';a.textContent='Відкрити критерії у документі ↗';$('#official-criteria').append(p,a);}
  $('.official-rule').open=false;
  $('#stage-panel').classList.remove('stage-arrive');void $('#stage-panel').offsetWidth;$('#stage-panel').classList.add('stage-arrive');
- if(focus)$(`#tab-${state.stage}`).focus({preventScroll:true});remember();
+ if(focus)$(`#g${state.stage+1}`).focus({preventScroll:true});remember();
 }
 function chooseStage(n,focus=false){state.stage=(n+4)%4;renderStage({focus});}
 $$('[data-stage]').forEach(b=>b.addEventListener('click',()=>chooseStage(Number(b.dataset.stage))));
@@ -162,7 +162,7 @@ const menu=$('#mobile-menu');$('#menu-toggle');$('.menu-toggle').addEventListene
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden){menu.hidden=true;$('.menu-toggle').setAttribute('aria-expanded','false');$('.menu-toggle').focus();}});
 const dialog=$('#sources-dialog');$('#sources-toggle').addEventListener('click',()=>dialog.showModal());$('#sources-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 fetch('assets/criteria.json').then(r=>{if(!r.ok)throw new Error('criteria');return r.json();}).then(data=>{exactCriteria=data;renderStage();}).catch(()=>{});
-fetch('assets/sources.json').then(r=>{if(!r.ok)throw new Error('sources');return r.json();}).then(data=>{let seen=new Set();for(const s of data){if(seen.has(s.label))continue;seen.add(s.label);const item=document.createElement('div');item.className='source-reference';const strong=document.createElement('strong');strong.textContent=s.label;const a=document.createElement('a');a.textContent=s.title+' ↗';a.href=s.url;a.target='_blank';a.rel='noopener';item.append(strong,a);$('#sources-list').append(item);}}).catch(()=>{$('#sources-list').textContent='Повний перелік джерел збережено в додатку A до White Paper.';});
+fetch('assets/sources.json').then(r=>{if(!r.ok)throw new Error('sources');return r.json();}).then(data=>{let seen=new Set();for(const s of data){if(seen.has(s.label))continue;seen.add(s.label);const item=document.createElement('div');item.className='source-reference';const number=s.label.match(/^R(\d+)\./);if(number)item.id='reference-r'+number[1];const strong=document.createElement('strong');strong.textContent=s.label;const a=document.createElement('a');a.textContent=s.title+' ↗';a.href=s.url;a.target='_blank';a.rel='noopener';item.append(strong,a);$('#sources-list').append(item);}document.dispatchEvent(new Event('venture:sources-ready'));}).catch(()=>{$('#sources-list').textContent='Повний перелік джерел збережено в додатку A до White Paper.';});
 let scrollPending=false;function renderScroll(){const total=document.documentElement.scrollHeight-innerHeight;$('#reading-progress').style.width=(total>0?scrollY/total*100:0)+'%';scrollPending=false;}addEventListener('scroll',()=>{if(!scrollPending){requestAnimationFrame(renderScroll);scrollPending=true;}},{passive:true});addEventListener('resize',renderScroll);
 const navLinks=$$('.site-header nav a');const sectionObserver=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting)navLinks.forEach(a=>a.classList.toggle('is-current',a.hash==='#'+entry.target.id));}},{rootMargin:'-15% 0px -60% 0px'});['sources','journey','people','glossary'].forEach(id=>sectionObserver.observe($('#'+id)));
 renderSource();renderRisk();renderEvidence();renderRole();renderDecision();renderPilot();renderScroll();
