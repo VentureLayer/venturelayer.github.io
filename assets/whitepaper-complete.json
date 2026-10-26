@@ -1,7 +1,7 @@
 {
   "title": "Venture Layer White Paper",
-  "edition": "2026-10-15",
-  "sha256": "167d4f391b6d40190048d6a086eb223c9340b8d26cb496436c7ec0cc94d5e3e7",
+  "edition": "2026-10-26",
+  "sha256": "db1cdff2c66580e4bdad9ff1e9ff6076f075eface44910694c3130eb2c4847e9",
   "blocks": [
     {
       "type": "paragraph",
@@ -21,7 +21,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Venture Layer White Paper · Розділи 01–10Початкова дата — 3 вересня 2026 року · Актуальна редакція — 15 жовтня 2026 року"
+      "text": "Venture Layer White Paper · Розділи 01–10Початкова дата — 3 вересня 2026 року · Актуальна редакція — 26 жовтня 2026 року"
     },
     {
       "type": "paragraph",
@@ -973,7 +973,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Рішення про бонус містить зіставлення погоджених умов із фактичним результатом. Змінювати умови після отримання результатів не допускається. Командний бонус розподіляється між Venture Leads пропорційно часу виконання мандата в цьому періоді."
+      "text": "Рішення про бонус містить зіставлення погоджених умов із фактичним результатом. Змінювати умови після отримання результатів не допускається. Командний бонус нараховується кожному Venture Lead пропорційно часу виконання мандата в цьому періоді."
     },
     {
       "type": "paragraph",
@@ -1571,7 +1571,7 @@
             "Місяць 3"
           ],
           [
-            "Проміжний розбір результатів, рішень і розривів; оцінювання й поновлення мандатів до їхнього закінчення; перший командний бонус; практична готовність Fellows."
+            "Проміжний розбір результатів, рішень і розривів; оцінювання й поновлення мандатів до їхнього закінчення; практична готовність Fellows."
           ],
           [
             "Board; Managing Venture Lead зводить дані, Training Partner подає матеріали Fellows."
@@ -1593,7 +1593,7 @@
             "Місяць 6"
           ],
           [
-            "Зафіксувати стан усіх прийнятих позицій; підсумковий розбір, перегляд мандатів, другий командний бонус і рішення Board."
+            "Зафіксувати стан усіх прийнятих позицій; підсумковий розбір, перегляд мандатів і рішення Board."
           ],
           [
             "Leads, Managing Venture Lead, Board."
@@ -1653,7 +1653,7 @@
         ],
         [
           [
-            "Сума b, основний фонд і резерв виплат; платник і графік виплат — за Фінансування програми. Ресурс Training Partner на період резерву — за Бонуси та забезпечення."
+            "Основний фонд і резерв виплат; платник і графік виплат — за Фінансування програми. Ресурс Training Partner на період резерву — за Бонуси та забезпечення."
           ],
           [
             "Business Partner і платник щодо бонусів; Training Partner щодо свого ресурсу; Board погоджує забезпечення."
@@ -1816,7 +1816,7 @@
     },
     {
       "type": "paragraph",
-      "text": "b — місячний фіксований бонус одного Lead. Стартовий розрахунок передбачає трьох Leads з однаковою базою впродовж шести календарних місяців, один із яких є Managing Venture Lead."
+      "text": "Розрахунок у доларах США (USD) передбачає трьох Venture Leads упродовж шести календарних місяців, один із яких є Managing Venture Lead. Фіксований щомісячний бонус одного Lead становить $400, надбавка Managing Venture Lead за координаційні обов’язки — $200 на місяць."
     },
     {
       "type": "table",
@@ -1826,43 +1826,43 @@
             "Складова"
           ],
           [
-            "Розрахунок"
+            "На місяць"
           ],
           [
-            "За основний період"
+            "За шість місяців"
           ]
         ],
         [
           [
-            "Фіксовані бонуси"
+            "Фіксовані бонуси Leads"
           ],
           [
-            "3b щомісяця"
+            "3 × $400 = $1 200"
           ],
           [
-            "18b"
+            "$7 200"
           ]
         ],
         [
           [
-            "Доплата Managing Venture Lead"
+            "Надбавка Managing Venture Lead"
           ],
           [
-            "0,2b щомісяця"
+            "$200"
           ],
           [
-            "1,2b"
+            "$1 200"
           ]
         ],
         [
           [
-            "Командний фонд"
+            "Командний бонус за спільний показник"
           ],
           [
-            "20% базових бонусів трьох Leads за квартал: 0,2 × 9b = 1,8b"
+            "До 3 × $200 = $600"
           ],
           [
-            "3,6b за два періоди"
+            "До $3 600"
           ]
         ],
         [
@@ -1870,10 +1870,10 @@
             "Разом"
           ],
           [
-            "Без податків і резерву завершення"
+            "$1 400 фіксовано; до $2 000 із командним бонусом"
           ],
           [
-            "22,8b"
+            "$8 400 фіксовано; до $12 000 із командним бонусом"
           ]
         ]
       ]
@@ -1884,11 +1884,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Для кожного тримісячного періоду застосовуються наперед погоджені умови командного бонусу за підрозділом Винагорода. Орієнтир двох go G3 не є квотою для його нарахування."
+      "text": "За досягнення спільного показника кожному Venture Lead нараховується додатковий командний бонус $200 за відповідний місяць. Supervisory Board визначає показник та умови його оцінювання до початку періоду за підрозділом «Винагорода». Орієнтир двох go G3 не є квотою для нарахування бонусу."
     },
     {
       "type": "paragraph",
-      "text": "За заміни людей розрахунок спирається на дати чинних мандатів. Неповні місяці й зміни складу оплачуються за погодженими умовами виплат. Формула 22,8b стосується стартового складу; підсумок показує фактичні нарахування, виплати та зобов’язання."
+      "text": "Фактичний фонд залежить від кількості місяців, за які нараховано командний бонус. За заміни людей розрахунок спирається на дати чинних мандатів; неповні місяці оплачуються за погодженими умовами виплат. Підсумок показує фактичні нарахування, виплати та зобов’язання. Податки й резерв завершення визначаються окремо."
     },
     {
       "type": "paragraph",
@@ -3148,6 +3148,28 @@
     {
       "type": "paragraph",
       "text": "З G2 вилучено окреме застереження щодо кола знайомих ініціатора. Вимогу підтвердження проблеми в цільовому сегменті та інші положення G2 збережено."
+    },
+    {
+      "type": "paragraph",
+      "text": "Запис 52 · 26 жовтня 2026 року · Щомісячна винагорода Venture Leads"
+    },
+    {
+      "type": "paragraph",
+      "text": "Погоджено $400 фіксованого бонусу на місяць кожному Lead, додаткові $200 кожному за місяць досягнення спільного показника та надбавку Managing Venture Lead $200 на місяць. Для трьох Leads за шість місяців фіксована частина становить $8 400, максимальний фонд із командним бонусом за всі шість місяців — $12 000. Оновлено календар і розрахунки; попередня формула 22,8b зберігається лише в історичних записах."
     }
-  ]
+  ],
+  "complete_headers_footers_and_notes_xml": {
+    "word/header1.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:hdr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"Header\"/><w:jc w:val=\"right\"/></w:pPr></w:p></w:hdr>",
+    "word/footer1.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"Footer\"/><w:jc w:val=\"right\"/></w:pPr></w:p></w:ftr>",
+    "word/header2.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:hdr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs><w:pBdr><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D8D9D1\" w:space=\"6\"/></w:pBdr></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>VENTURE LAYER</w:t></w:r><w:r><w:tab/><w:t>WHITE PAPER · 01–10</w:t></w:r></w:p></w:hdr>",
+    "word/footer2.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs></w:pPr><w:r><w:t>Bohdan Didenko</w:t><w:tab/></w:r><w:fldSimple w:instr=\"PAGE\"/></w:p></w:ftr>",
+    "word/header3.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:hdr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"Header\"/></w:pPr></w:p></w:hdr>",
+    "word/header4.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:hdr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"Header\"/></w:pPr></w:p></w:hdr>",
+    "word/footer3.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"Footer\"/></w:pPr></w:p></w:ftr>",
+    "word/footer4.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"Footer\"/></w:pPr></w:p></w:ftr>",
+    "word/header5.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:hdr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs><w:pBdr><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D8D9D1\" w:space=\"6\"/></w:pBdr></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>VENTURE LAYER</w:t></w:r><w:r><w:tab/><w:t>WHITE PAPER · 01–10</w:t></w:r></w:p></w:hdr>",
+    "word/header6.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:hdr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs><w:pBdr><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D8D9D1\" w:space=\"6\"/></w:pBdr></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>VENTURE LAYER</w:t></w:r><w:r><w:tab/><w:t>WHITE PAPER · 01–10</w:t></w:r></w:p></w:hdr>",
+    "word/footer5.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs></w:pPr><w:r><w:t>Bohdan Didenko</w:t><w:tab/></w:r><w:fldSimple w:instr=\"PAGE\"/></w:p></w:ftr>",
+    "word/footer6.xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n<w:ftr xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\" xmlns:mv=\"urn:schemas-microsoft-com:mac:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 wp14\"><w:p><w:pPr><w:pStyle w:val=\"V3Foot\"/><w:tabs><w:tab w:pos=\"9412\" w:val=\"right\"/></w:tabs></w:pPr><w:r><w:t>Bohdan Didenko</w:t><w:tab/></w:r><w:fldSimple w:instr=\"PAGE\"/></w:p></w:ftr>"
+  }
 }
