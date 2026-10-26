@@ -26,6 +26,7 @@
   match=id.match(/^pilot-(people|time|bonuses)$/);
   if(match){const n=match[1]==='bonuses'?'money':match[1];if(state.pilot!==n){state.pilot=n;renderPilot();}}
   let target=document.getElementById(id);
+  if(/^g[1-4]$/.test(id))target=target?.closest('.journey-spread')||target;
   if(id.startsWith('term-')&&target){
    const search=q('#term-search');if(search.value){search.value='';qa('.glossary-term').forEach(el=>el.hidden=false);q('#glossary-empty').hidden=true;}
    target.open=true;
@@ -51,7 +52,10 @@
  document.addEventListener('click',e=>{
   const a=e.target.closest('a.ref-link');
   if(!a||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
-  if(a.hash.startsWith('#reference-')&&!location.hash.startsWith('#reference-'))sourceHasOrigin=true;
+  if(a.hash.startsWith('#reference-')){
+   if(!location.hash.startsWith('#reference-'))sourceHasOrigin=true;
+   return;
+  }
   prepare(a.hash);
  },true);
  addEventListener('hashchange',()=>{const target=prepare(location.hash);if(target)requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'instant'}));});
@@ -67,7 +71,7 @@
   const before=source.substring(0,index);
   return /^(?:отримати|виконувати|реалізувати|прийняти|забезпечити|працювати|ширшого|рішення|перевірки|розвитку|залучити|продовжувати|продовжити|продовження|створити|розгляду|має)(?![\p{L}\p{N}_])/u.test(next)||/(?:принципов[а-яіїєґ]*|системн[а-яіїєґ]*|інституційн[а-яіїєґ]*|його|її|свої|їхні)\s+$/iu.test(before);
  }
- fetch('assets/reference-map.json?v=20261026-references2').then(r=>{if(!r.ok)throw new Error('reference-map');return r.json();}).then(refs=>{
+ fetch(new URL('reference-map.json?v=20261026-references2',guideAssets)).then(r=>{if(!r.ok)throw new Error('reference-map');return r.json();}).then(refs=>{
   const byAlias=new Map();
   refs.forEach(ref=>ref.aliases.forEach(alias=>byAlias.set(alias.toLocaleLowerCase('uk-UA'),ref)));
   const aliases=[...byAlias.keys()].sort((a,b)=>b.length-a.length);
