@@ -164,6 +164,40 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden){menu.
 const dialog=$('#sources-dialog');$('#sources-toggle').addEventListener('click',()=>dialog.showModal());$('#sources-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 fetch(new URL('criteria.json',guideAssets)).then(r=>{if(!r.ok)throw new Error('criteria');return r.json();}).then(data=>{exactCriteria=data;renderStage();}).catch(()=>{});
 fetch(new URL('sources.json',guideAssets)).then(r=>{if(!r.ok)throw new Error('sources');return r.json();}).then(data=>{let seen=new Set();for(const s of data){if(seen.has(s.label))continue;seen.add(s.label);const item=document.createElement('div');item.className='source-reference';const number=s.label.match(/^R(\d+)\./);if(number)item.id='reference-r'+number[1];const strong=document.createElement('strong');strong.textContent=s.label;const a=document.createElement('a');a.textContent=s.title;a.href=s.url;a.target='_blank';a.rel='noopener';item.append(strong,a);$('#sources-list').append(item);}document.dispatchEvent(new Event('venture:sources-ready'));}).catch(()=>{$('#sources-list').textContent='Повний перелік джерел збережено в додатку A до White Paper.';});
-let scrollPending=false;function renderScroll(){const total=document.documentElement.scrollHeight-innerHeight;$('#reading-progress').style.width=(total>0?scrollY/total*100:0)+'%';scrollPending=false;}addEventListener('scroll',()=>{if(!scrollPending){requestAnimationFrame(renderScroll);scrollPending=true;}},{passive:true});addEventListener('resize',renderScroll);
+const updateFlower=setupFlowerParallax();
+let scrollPending=false;function renderScroll(){const total=document.documentElement.scrollHeight-innerHeight;$('#reading-progress').style.width=(total>0?scrollY/total*100:0)+'%';updateFlower();scrollPending=false;}addEventListener('scroll',()=>{if(!scrollPending){requestAnimationFrame(renderScroll);scrollPending=true;}},{passive:true});addEventListener('resize',renderScroll);
 const navLinks=$$('.site-header nav a');const sectionObserver=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting)navLinks.forEach(a=>a.classList.toggle('is-current',a.hash==='#'+entry.target.id));}},{rootMargin:'-15% 0px -60% 0px'});['sources','journey','people','glossary'].forEach(id=>sectionObserver.observe($('#'+id)));
 renderSource();renderRisk();renderEvidence();renderRole();renderDecision();renderPilot();renderScroll();
+
+// One requested brand-motion moment; reuse the existing scroll animation frame.
+function setupFlowerParallax(){
+ const panel=document.querySelector('.hero-poster');
+ if(!panel)return()=>{};
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const precise=matchMedia('(hover: hover) and (pointer: fine) and (min-width: 768px)');
+ let pointerX=0,pointerY=0,pointerInside=false,pointerFrame=0;
+ const clamp=(n,min,max)=>Math.min(max,Math.max(min,n));
+ function reset(){
+  panel.removeAttribute('data-flower-motion');
+  for(const name of ['--flower-x','--flower-y','--flower-rx','--flower-ry','--flower-scroll-y'])panel.style.removeProperty(name);
+ }
+ function draw(){
+  if(reduced.matches||!precise.matches||document.hidden){reset();return;}
+  const box=panel.getBoundingClientRect();
+  if(box.bottom<=0||box.top>=innerHeight){reset();return;}
+  panel.setAttribute('data-flower-motion','');
+  const x=pointerInside?clamp((pointerX-box.left)/box.width*2-1,-1,1):0;
+  const y=pointerInside?clamp((pointerY-box.top)/box.height*2-1,-1,1):0;
+  panel.style.setProperty('--flower-x',x*9+'px');
+  panel.style.setProperty('--flower-y',y*7+'px');
+  panel.style.setProperty('--flower-rx',-y*2.2+'deg');
+  panel.style.setProperty('--flower-ry',x*2.8+'deg');
+  panel.style.setProperty('--flower-scroll-y',clamp(-box.top*.035,0,14)+'px');
+ }
+ function schedule(){if(pointerFrame)return;pointerFrame=requestAnimationFrame(()=>{pointerFrame=0;draw();});}
+ panel.addEventListener('pointermove',e=>{pointerX=e.clientX;pointerY=e.clientY;pointerInside=true;schedule();},{passive:true});
+ panel.addEventListener('pointerleave',()=>{pointerInside=false;schedule();});
+ reduced.addEventListener('change',schedule);precise.addEventListener('change',schedule);
+ document.addEventListener('visibilitychange',schedule);
+ return draw;
+}
