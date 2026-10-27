@@ -9,7 +9,7 @@
 /* Hallmark · answered F4 · selected stage, source, risk and role controls have state fills; only the yellow button recipe denotes the primary action in this educational guide */
 /* Hallmark · answered F15 · the original hero has its own 64px gap; the instructional grids share the column gap and collapse at the documented breakpoints */
 /* Hallmark · waive 11 · the owner explicitly requests the original flower's pointer and scroll parallax · only this existing brand illustration moves, with reduced-motion and coarse-pointer safeguards */
-@import url('./tokens.css?v=20261027-gold');
+@import url('./tokens.css?v=20261027-mint-texture');
 @import url('./base.css');
 @font-face{font-family:Nunito;src:url('./nunito.ttf') format('truetype');font-weight:200 1000;font-style:normal;font-display:swap}
 body{font-weight:500;background-image:var(--grain),var(--fibre);font-synthesis:none}button,input,select,textarea{font-family:var(--font-body);color:var(--color-ink)}button,a{-webkit-tap-highlight-color:var(--color-clear)}button{cursor:pointer}button:disabled,[aria-disabled=true]{opacity:.55;cursor:not-allowed;transform:none}button[aria-busy=true]{cursor:progress}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--color-focus);outline-offset:4px;transition:none}h4,p{margin:0}h4{font-size:var(--text-lg);line-height:1.25;font-weight:750;overflow-wrap:break-word;min-width:0}h1,h2,h3,h4{color:var(--color-ink)}p{line-height:1.6}p+p{margin-top:var(--space-md)}em,.handwritten{font-family:var(--font-body);font-style:normal;font-weight:inherit}.section-wrap{width:100%;max-width:var(--container);padding-inline:var(--gutter);margin-inline:auto}.svg-library{position:absolute;width:0;height:0;overflow:clip}svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;max-width:100%}a svg,button svg{width:24px;height:24px;flex-shrink:0}.skip-link{position:fixed;top:-100px;left:var(--space-md);z-index:var(--z-tooltip);background:var(--color-ink);color:var(--color-paper);padding:var(--space-sm) var(--space-lg);border-radius:var(--radius-input)}.skip-link:focus{top:var(--space-sm)}
@@ -47,7 +47,7 @@ body{font-weight:500;background-image:var(--grain),var(--fibre);font-synthesis:n
 @media(hover:hover) and (pointer:fine) and (min-width:768px){.hero-poster[data-flower-motion] .poster-flower{transform:translate3d(0,var(--flower-scroll-y,0px),0);transition:transform var(--dur-short) var(--ease-out)}.hero-poster[data-flower-motion]:hover .poster-flower img{transform:translate3d(var(--flower-x,0px),var(--flower-y,0px),0) rotateX(var(--flower-rx,0deg)) rotateY(var(--flower-ry,0deg))}}
 @media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse),(max-width:767px){.hero-poster .poster-flower,.hero-poster .poster-flower img{transform:none!important;transition:none!important}}
 
-/* User reference: ochre-gold print stock, static fine grain confined to the flower plate. */
-.hero-poster{background:var(--fibre),var(--color-flower-gold);isolation:isolate}
+/* Restored mint surface with the retained static fine grain. */
+.hero-poster{background:var(--fibre),var(--color-flower-surface);isolation:isolate}
 .hero-poster::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background-image:var(--gold-grain);background-size:var(--gold-grain-size) var(--gold-grain-size);opacity:var(--gold-grain-opacity)}
 .hero-poster>.poster-top,.hero-poster>.poster-flower,.hero-poster>.poster-footer{position:relative;z-index:var(--z-base)}
