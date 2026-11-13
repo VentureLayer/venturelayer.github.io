@@ -1,8 +1,11 @@
 'use strict';
 (() => {
  const q=(s,root=document)=>root.querySelector(s),qa=(s,root=document)=>[...root.querySelectorAll(s)];
+ const compact=q('#glossary')?.dataset.compact==='true';
+ const termRoleAliases={"term-team": "role-team", "term-team-lead": "role-team", "term-venture-lead": "role-lead", "term-fellowship": "role-fellow", "term-managing-lead": "role-managing", "term-academic-partner": "role-academic", "term-training-partner": "role-training", "term-business-partner": "role-business", "term-board": "role-board"};
+ const resolveId=id=>compact?(id==='evidence'?'term-evidence':termRoleAliases[id]||id):id;
  const glossaryIds=['opportunity','venture','initiator','team','team-lead','venture-lead','stage','interval','gate','mandate','portfolio','risk','go','pass','recycle','pivot','spin-out','journal','registry','fellowship','managing-lead','academic-partner','training-partner','business-partner','board','founder-discovery','portfolio-review','evidence'];
- qa('.glossary-term').forEach((el,i)=>{el.id='term-'+glossaryIds[i];el.classList.add('reference-target');el.tabIndex=-1;});
+ qa('.glossary-term').forEach((el,i)=>{if(!el.id)el.id='term-'+glossaryIds[i];el.classList.add('reference-target');el.tabIndex=-1;});
  q('.hero-description').id='layer-intro';
  q('.hero-description').classList.add('reference-target');
  q('#resources .plain-details').id='legal-g4';
@@ -18,18 +21,18 @@
  q('#sources-dialog-title').id='reference-whitepaper';q('#sources-dialog').setAttribute('aria-labelledby','reference-whitepaper');
  // Real fragments keep native copy-link, open-in-new-tab, keyboard and history behavior.
  function prepare(hash){
-  const id=decodeURIComponent(hash.replace(/^#/,''));
+  const id=resolveId(decodeURIComponent(hash.replace(/^#/,'')));
   let match=id.match(/^g([1-4])$/);
   if(match){const n=Number(match[1])-1;if(state.stage!==n)chooseStage(n);}
   match=id.match(/^role-(team|lead|fellow|managing|training|academic|business|board)$/);
   if(match&&state.role!==match[1]){state.role=match[1];renderRole();}
   match=id.match(/^pilot-(people|time|bonuses)$/);
-  if(match){const n=match[1]==='bonuses'?'money':match[1];if(state.pilot!==n){state.pilot=n;renderPilot();}}
+  if(match&&!(match[1]==='bonuses'&&q('[data-lead-rewards]'))){const n=match[1]==='bonuses'?'money':match[1];if(state.pilot!==n){state.pilot=n;renderPilot();}}
   let target=document.getElementById(id);
   if(/^g[1-4]$/.test(id))target=target?.closest('.journey-spread')||target;
   if(id.startsWith('term-')&&target){
-   const search=q('#term-search');if(search.value){search.value='';qa('.glossary-term').forEach(el=>el.hidden=false);q('#glossary-empty').hidden=true;}
-   target.open=true;
+   const search=q('#term-search');search.value='';filterGlossary('',id);
+   target.hidden=false;target.open=true;
   }
   if(id==='board-rules')q('.board-explorer').open=true;
   if(id==='legal-g4')q('#legal-g4').open=true;
@@ -72,6 +75,7 @@
   return /^(?:отримати|виконувати|реалізувати|прийняти|забезпечити|працювати|ширшого|рішення|перевірки|розвитку|залучити|продовжувати|продовжити|продовження|створити|розгляду|має)(?![\p{L}\p{N}_])/u.test(next)||/(?:принципов[а-яіїєґ]*|системн[а-яіїєґ]*|інституційн[а-яіїєґ]*|його|її|свої|їхні)\s+$/iu.test(before);
  }
  fetch(new URL('reference-map.json?v=20261026-references2',guideAssets)).then(r=>{if(!r.ok)throw new Error('reference-map');return r.json();}).then(refs=>{
+  refs=refs.map(ref=>({...ref,web:ref.web.startsWith('#')?'#'+resolveId(ref.web.slice(1)):ref.web}));
   const byAlias=new Map();
   refs.forEach(ref=>ref.aliases.forEach(alias=>byAlias.set(alias.toLocaleLowerCase('uk-UA'),ref)));
   const aliases=[...byAlias.keys()].sort((a,b)=>b.length-a.length);
@@ -90,7 +94,7 @@
     for(const m of original.matchAll(pattern)){
      const ref=byAlias.get(m[0].toLocaleLowerCase('uk-UA'));const target=document.querySelector(ref.web);
      if(!target&& !ref.web.startsWith('#reference-'))continue;
-     const owner=node.parentElement.closest('.glossary-term,.decision-definitions>div,.board-explorer,#journal,#evidence,.hero-description');
+     const owner=node.parentElement.closest('.glossary-term,.decision-definitions>div,.board-explorer,#journal,#evidence,.hero-description,.rewards-section');
      if(owner&&owner.id===ref.web.slice(1))continue;
      if(node.parentElement.closest('.role-poster')&&ref.web==='#role-'+state.role)continue;
      if(ref.key==='opportunity'&&ambiguousOpportunity(m[0],original,m.index))continue;
