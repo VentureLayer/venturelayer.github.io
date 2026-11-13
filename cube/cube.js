@@ -24,7 +24,7 @@ for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<img src="sta
 renderStage();
 
 const playButton=q('#cube-play'),resetButton=q('#cube-reset'),turnButton=q('#cube-turn');
-let player=null,indexer=null,moveCount=0,duration=0,phase=0,playing=false,complete=false;
+let player=null,indexer=null,moveCount=0,duration=0,stepTimes=[0,0,0,0],phase=0,playing=false,complete=false;
 let generation=0,loading=true,lastProgress=-1;
 
 function updatePlayLabel(){
@@ -60,6 +60,7 @@ async function selectExample(key,{syncGuide=true}={}){
  const nextIndexer=await player.experimentalModel.indexer.get();
  if(request!==generation)return;
  indexer=nextIndexer;moveCount=indexer.numAnimatedLeaves();duration=indexer.algDuration();
+ stepTimes=[0,1,2,3].map(step=>step===3?duration:indexer.indexToMoveStartTimestamp(Math.round(moveCount*step/3)));
  loading=false;
  if(syncGuide){state.source=example.source;state.stage=0;renderSource();paintStep(0,0);}
  else jumpToStep(state.stage);
@@ -70,7 +71,7 @@ function jumpToStep(next){
  if(!player||!indexer||loading)return;
  player.pause();playing=false;
  const leaf=Math.round(moveCount*next/3);
- player.timestamp=leaf===moveCount?duration:indexer.indexToMoveStartTimestamp(leaf);
+ player.timestamp=stepTimes[next];
  complete=next===3;paintStep(next,leaf/moveCount);updatePlayLabel();
 }
 
@@ -82,7 +83,7 @@ async function initialize(){
   player.experimentalModel.detailedTimelineInfo.addFreshListener(info=>{
    if(loading||!duration)return;
    const progress=Math.max(0,Math.min(1,info.timestamp/duration));
-   const next=progress>=.999?3:progress>=2/3?2:progress>=1/3?1:0;
+   const next=progress>=.999?3:info.timestamp>=stepTimes[2]-.001?2:info.timestamp>=stepTimes[1]-.001?1:0;
    complete=progress>=.999;paintStep(next,progress);updatePlayLabel();
   });
   player.experimentalModel.playingInfo.addFreshListener(info=>{playing=info.playing;updatePlayLabel();});
