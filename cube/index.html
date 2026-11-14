@@ -27,7 +27,7 @@
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="initial-frame.png"><link rel="preload" href="../hallmark/nunito.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../hallmark/styles.css?v=20261113-feedback"><link rel="stylesheet" href="cube.css?v=20261114-same-frame">
-  <script src="../hallmark/app.js?v=20261114-current" defer></script>
+  <script src="../hallmark/app.js?v=20261114-source-fix" defer></script>
   <script src="../references.js?v=20261113-feedback" defer></script>
 <script type="importmap">{"imports": {"cubing/alg": "./vendor/cubing/alg/index.js", "cubing/twisty": "./vendor/cubing/twisty/index.js", "cubing/puzzles": "./vendor/cubing/puzzles/index.js", "three/": "./vendor/three/"}}</script><script type="module" src="cube.js?v=20261114-same-frame"></script><link rel="stylesheet" href="../rewards.css?v=20261114-focus"></head>
 <body>
@@ -55,14 +55,14 @@
 <section class="hero section-wrap cube-hero" id="top" aria-labelledby="hero-title">
 <div class="hero-copy">
 <h1 id="hero-title">Від задуму<br> до самостійного<br> продукту.</h1>
-<a class="hero-pay" href="#pilot-bonuses" aria-label="Винагорода Venture Lead під час пілоту: 400 доларів щомісяця та 200 доларів командного бонусу за місяць досягнення спільного показника">
-<span class="hero-pay-label">Винагорода Venture Lead · пілот</span>
+<a class="hero-pay" href="#pilot-bonuses" aria-label="Оплачувана роль Venture Lead: супровід студентських команд, 400 доларів щомісяця та додатково 200 доларів за місяць досягнення спільного показника">
+<span class="hero-pay-label">Допомагайте студентським командам розвивати продукти</span>
 <span class="hero-pay-amounts"><span><strong>$400</strong><small>щомісяця</small></span><i aria-hidden="true">+</i><span><strong>$200</strong><small>командний бонус</small></span></span>
-<span class="hero-pay-terms">Бонус — за місяць досягнення спільного показника. <span>Умови ↗</span></span>
+<span class="hero-pay-terms">Це оплачувана роль Venture Lead — супровід команд від ідеї до продукту. Додаткові $200 кожен Lead отримує за місяць, коли разом досягнуто спільного показника. <span>Докладніше про винагороду ↗</span></span>
 </a>
 <p class="hero-subtitle">У кожного проєкту — свій початок. Venture Lead допомагає команді визначити наступний крок.</p>
 <p class="hero-description">Venture Layer допомагає університетським командам перевірити свої задуми й розвивати продукти.</p>
-<div class="cube-hero-actions"><a class="button button-dark" href="#journey">Як це працює <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="cube-identity-link" href="identity.html">Кубик як айдентика</a></div>
+<div class="cube-hero-actions"><a class="button button-dark" href="#journey">Як це працює <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></div>
 </div>
 <div class="cube-poster" aria-label="Як проста потреба може вирости у стартап" data-phase="idea">
 <div class="cube-poster-top"><a class="cube-source-badge" id="cube-source-link" href="#source-initiative" aria-label="Про джерело: Від людини чи групи"><span class="cube-source-letter" id="cube-source-letter">В</span><svg aria-hidden="true"><use id="cube-source-icon" href="#i-star"></use></svg><span class="cube-source-caption"><small>Джерело</small><strong id="cube-origin">Від людини чи групи</strong></span><span class="cube-source-arrow" aria-hidden="true">↗</span></a><span class="cube-phase-tag" id="cube-phase-tag">Просте бажання</span></div>
@@ -76,9 +76,9 @@
 <section class="section-wrap sources-section" id="sources" aria-labelledby="sources-title">
   <div class="section-heading"><div><h2 id="sources-title">Звідки береться<br> <em>перша іскорка?</em></h2></div><p>Ідея може прийти трьома шляхами. Оберіть один — цей навчальний приклад супроводжуватиме нас далі.</p></div>
   <div class="source-options" role="group" aria-label="Оберіть джерело навчального прикладу">
-    <button type="button" class="source-option active" data-source="university" id="source-university" aria-pressed="true"><span class="source-number">А</span><svg class="source-art" aria-hidden="true"><use href="#i-house"></use></svg><h3>З університету</h3><p>Є практична задача, яку хочеться розв’язати краще.</p><span class="source-example">Наприклад, зручний розклад занять.</span><span class="source-select">Наш приклад <span aria-hidden="true">✓</span></span></button>
-    <button type="button" class="source-option" data-source="partner" id="source-partner" aria-pressed="false"><span class="source-number">Б</span><svg class="source-art" aria-hidden="true"><use href="#i-people"></use></svg><h3>Від партнера</h3><p>Організація приносить задачу з реального життя.</p><span class="source-example">Наприклад, довге очікування в черзі.</span><span class="source-select">Обрати цю історію <span aria-hidden="true">+</span></span></button>
-    <button type="button" class="source-option" data-source="initiative" id="source-initiative" aria-pressed="false"><span class="source-number">В</span><svg class="source-art" aria-hidden="true"><use href="#i-star"></use></svg><h3>Від людини чи групи</h3><p>Студент або дослідницька група має власний задум.</p><span class="source-example">Наприклад, пошук у власних нотатках.</span><span class="source-select">Обрати цю історію <span aria-hidden="true">+</span></span></button>
+    <button type="button" class="source-option active" data-source="university" id="source-university" aria-pressed="true"><span class="source-number">А</span><svg class="source-art" aria-hidden="true"><use href="#i-house"></use></svg><h3>З університету</h3><p>Є практична задача, яку хочеться розв’язати краще.</p><span class="source-example">Наприклад, зручний розклад занять.</span><span class="source-select">Обраний приклад <span aria-hidden="true">✓</span></span></button>
+    <button type="button" class="source-option" data-source="partner" id="source-partner" aria-pressed="false"><span class="source-number">Б</span><svg class="source-art" aria-hidden="true"><use href="#i-people"></use></svg><h3>Від партнера</h3><p>Організація приносить задачу з реального життя.</p><span class="source-example">Наприклад, довге очікування в черзі.</span><span class="source-select">Показати на цьому прикладі <span aria-hidden="true">+</span></span></button>
+    <button type="button" class="source-option" data-source="initiative" id="source-initiative" aria-pressed="false"><span class="source-number">В</span><svg class="source-art" aria-hidden="true"><use href="#i-star"></use></svg><h3>Від людини чи групи</h3><p>Студент або дослідницька група має власний задум.</p><span class="source-example">Наприклад, пошук у власних нотатках.</span><span class="source-select">Показати на цьому прикладі <span aria-hidden="true">+</span></span></button>
   </div>
   <div class="entry-note"><svg aria-hidden="true"><use href="#i-seed"></use></svg><div><h3>Спочатку — обрати, що варто дослідити</h3><p>Venture Lead вивчає доступні можливості та їхній потенціал. Коли бере можливість до портфеля, відкриваються її журнал і перша стадія — Ideation. Це відбувається до G1.</p></div><span class="note-side">портфель =<br> можливості, які веде Lead</span></div>
 </section>
