@@ -32,7 +32,7 @@ let phase='idea',generation=0,remainingStories=[];
 const sources={
  university:{label:'З університету',letter:'А',icon:'#i-house'},
  partner:{label:'Від партнера',letter:'Б',icon:'#i-people'},
- initiative:{label:'Від людини чи групи',letter:'В',icon:'#i-star'}
+ initiative:{label:'Від студента чи дослідницької групи',letter:'В',icon:'#i-star'}
 };
 
 function drawNextStory(){
