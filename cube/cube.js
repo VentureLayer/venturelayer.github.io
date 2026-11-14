@@ -20,7 +20,7 @@ state.source='university';
 renderSource();
 const stageImages={seed:'ideation',sprout:'validation',build:'creation',flower:'spinout'};
 const stageCubeLabels={seed:'Жодної зібраної грані',sprout:'Зібрана одна грань',build:'Зібрані дві грані',flower:'Зібрані три грані'};
-for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<div class="stage-cube-progress"><img src="stages/${image}.svg?v=20261114-faces0123" alt="${stageCubeLabels[key]}" width="180" height="188"><span>${stageCubeLabels[key]}</span></div>`;
+for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<div class="stage-cube-progress"><img src="stages/${image}.svg?v=20261114-faces0123" alt="${stageCubeLabels[key]}" width="180" height="188"></div>`;
 renderStage();
 
 const poster=q('.cube-poster'),caption=q('#cube-caption'),motionButton=q('#cube-motion-toggle');
