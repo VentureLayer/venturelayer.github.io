@@ -1,60 +1,67 @@
 import { TwistyPlayer } from 'cubing/twisty';
+import { Alg } from 'cubing/alg';
 
 const q=selector=>document.querySelector(selector);
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
-const examples=[
- {source:'initiative',origin:'Власна ініціатива',kind:'Студентський петпроєкт',name:'Пошук у власних конспектах',description:'Студент зробив інструмент для своїх нотаток і хоче розвинути його для інших.'},
- {source:'university',origin:'Потреба університету',kind:'Сервіс для студентів',name:'Розклад без плутанини',description:'Університету потрібен зручний спосіб повідомляти студентів про зміни занять та аудиторій.'},
- {source:'partner',origin:'Задача зовнішнього партнера',kind:'Запит від клініки',name:'Черга, яку видно наперед',description:'Клініка шукає спосіб показувати відвідувачам час очікування та зміни в черзі.'},
- {source:'initiative',origin:'Власна ініціатива',kind:'Прототип після хакатону',name:'Маршрут без бар’єрів',description:'Після хакатону залишився прототип карти доступних маршрутів містом. Команда хоче продовжити роботу.'},
- {source:'university',origin:'Потреба університету',kind:'Задача від кафедри',name:'Прилади, які можна забронювати',description:'Кафедрі потрібен спільний календар, щоб студенти й дослідники могли планувати роботу з обладнанням.'},
- {source:'partner',origin:'Задача зовнішнього партнера',kind:'Запит від підприємства',name:'Менше простою на виробництві',description:'Підприємство шукає спосіб завчасно помічати ознаки несправності обладнання.'},
- {source:'initiative',origin:'Власна ініціатива',kind:'Дослідницьке напрацювання',name:'Робот для перевірки труб',description:'Дослідницька група має лабораторний прототип робота для огляду важкодоступних ділянок.'},
- {source:'university',origin:'Потреба університету',kind:'Підтримка студентської практики',name:'Знайти свою практику',description:'Університет хоче поєднати пропозиції практики з інтересами й навичками студентів.'},
- {source:'partner',origin:'Задача зовнішнього партнера',kind:'Запит від мережі магазинів',name:'Менше зіпсованих продуктів',description:'Мережа шукає спосіб точніше планувати запаси продуктів із коротким терміном зберігання.'}
+const stories=[
+ {source:'initiative',origin:'Від студента',need:'Хочу знати, коли перенесли пару',name:'Пара',product:'Платформа для розкладів університетів у різних країнах: заняття, аудиторії й усі зміни — в одному місці.',scramble:"R U F L D R' B U'"},
+ {source:'university',origin:'Від університету',need:'Хочемо знати, які аудиторії зараз вільні',name:'Місце',product:'Сервіс бронювання приміщень для університетів, офісів і коворкінгів по всьому світу.',scramble:"F R U R' U' F' L D"},
+ {source:'partner',origin:'Від партнера',need:'Хочемо, щоб люди менше чекали в черзі',name:'Своя черга',product:'Платформа запису й електронних черг для клінік, банків і сервісних центрів у різних країнах.',scramble:"L F U B' D R' U' F'"},
+ {source:'initiative',origin:'Від студента',need:'Хочу легко ділити витрати з друзями',name:'Порівну',product:'Застосунок для спільних витрат у подорожах і спільному житлі. Для компаній друзів у будь-якій країні.',scramble:"U R F' D L' B R' U'"},
+ {source:'university',origin:'Від університету',need:'Хочемо, щоб студентам було простіше отримати довідку',name:'Одна заява',product:'Цифровий студентський офіс: заяви, документи й відповіді онлайн. Продукт для університетів у різних країнах.',scramble:"B U L' F R D' L B'"},
+ {source:'partner',origin:'Від партнера',need:'Хочемо списувати менше їжі наприкінці дня',name:'Вчасно',product:'Сервіс планування закупівель і залишків для кафе та ресторанів — від одного закладу до міжнародних мереж.',scramble:"R F U L' B D R' F'"},
+ {source:'initiative',origin:'Від студента',need:'Хочу знайти того, хто пояснить складну тему',name:'Поясни',product:'Платформа, де учні й студенти знаходять викладачів для онлайн-занять незалежно від міста та країни.',scramble:"D R B U' L F D' R'"},
+ {source:'university',origin:'Від університету',need:'Хочемо, щоб студентам було легше знайти практику',name:'Перший крок',product:'Платформа стажувань, яка поєднує студентів, університети й роботодавців у різних країнах.',scramble:"F L D B' R U F' L'"},
+ {source:'partner',origin:'Від партнера',need:'Хочемо простіше оформлювати повернення товарів',name:'Поверни',product:'Сервіс повернень і обміну для інтернет-магазинів, які продають у різних країнах.',scramble:"B R D F' U L B' R'"}
 ];
 
-// Keep the guide's existing illustration mechanism. The hero is an independent illustration.
+// Reuse the guide's art. The automatic hero has no effect on the guide's stage or source.
 const stageImages={seed:'ideation',sprout:'validation',build:'creation',flower:'spinout'};
 for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<img src="stages/${image}.svg" alt="" width="180" height="188">`;
 renderStage();
 
-const poster=q('.cube-poster');
-const caption=q('#cube-caption');
-const motionButton=q('#cube-motion-toggle');
-const dots=q('#cube-example-dots');
-const exampleDuration=6000;
-let player=null,ready=false,index=0,exampleTime=0,angle=35,motionTime=0;
-let paused=false,inView=false,frameId=null,previousFrame=null,captionAnimation=null;
+const poster=q('.cube-poster'),caption=q('#cube-caption'),motionButton=q('#cube-motion-toggle');
+const timing={solveStart:2600,solveEnd:6000,end:10800};
+let player=null,ready=false,index=0,storyTime=0,motionTime=0,angle=35,duration=0;
+let paused=false,inView=false,loading=false,initializing=true,frameId=null,previousFrame=null,captionAnimation=null;
+let phase='idea',generation=0;
 
-examples.forEach((example,i)=>{
- const button=document.createElement('button');
- button.type='button';button.dataset.cubeExample=String(i);
- button.setAttribute('aria-label',`${example.origin}: ${example.name}`);
- button.title=example.name;
- button.innerHTML='<span aria-hidden="true"></span>';
- button.addEventListener('click',()=>selectExample(i));
- dots.append(button);
-});
-
-function selectExample(next,{animate=true}={}){
- index=(next+examples.length)%examples.length;
- exampleTime=0;
- const example=examples[index];
- q('#cube-origin').textContent=example.origin;
- q('#cube-example-kind').textContent=example.kind;
- q('#cube-case-name').textContent=example.name;
- q('#cube-case-description').textContent=example.description;
- q('#cube-example-count').textContent=`${String(index+1).padStart(2,'0')} / ${String(examples.length).padStart(2,'0')}`;
- poster.dataset.source=example.source;
- [...dots.children].forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+function setCaption(next,{animate=true}={}){
+ const story=stories[index];
+ phase=next;poster.dataset.phase=next;
+ q('#cube-origin').textContent=story.origin;
+ q('#cube-phase-tag').textContent=next==='startup'?'Можливий стартап':next==='solving'?'Ідея набуває форми':'Просте бажання';
+ q('#cube-example-kind').textContent=next==='startup'?'Може вирости в…':next==='solving'?'Перевіряємо, кому ще це потрібно':'Усе починається з…';
+ q('#cube-case-name').textContent=next==='startup'?story.name:`«${story.need}»`;
+ q('#cube-case-description').textContent=next==='startup'?story.product:'';
+ q('.cube-fallback').src=next==='startup'?'marks/solved.svg':'logo.svg';
  captionAnimation?.cancel();
  if(animate&&!reducedMotion.matches){
   captionAnimation=caption.animate([
-   {opacity:0,transform:'translateY(10px)'},
-   {opacity:1,transform:'translateY(0)'}
-  ],{duration:550,easing:'cubic-bezier(.2,.7,.2,1)'});
+   {opacity:0,transform:next==='startup'?'translateY(15px) scale(.97)':'translateY(10px)'},
+   {opacity:1,transform:'translateY(0) scale(1)'}
+  ],{duration:600,easing:'cubic-bezier(.16,1,.3,1)'});
  }
+ if(reducedMotion.matches){
+  q('#cube-example-kind').textContent='Отак може початися стартап';
+  q('#cube-case-name').textContent=`«${story.need}»`;
+  q('#cube-case-description').textContent=`${story.name} — ${story.product}`;
+ }
+}
+
+async function prepareStory(next,{animate=true}={}){
+ const request=++generation;
+ index=next%stories.length;storyTime=0;loading=true;
+ setCaption('idea',{animate});
+ if(!player){loading=false;return;}
+ player.alg=new Alg(stories[index].scramble).invert();
+ player.experimentalSetupAnchor='end';player.timestamp='start';
+ try{
+  const indexer=await player.experimentalModel.indexer.get();
+  if(request!==generation)return;
+  duration=indexer.algDuration();
+  if(reducedMotion.matches)player.timestamp=duration;
+ }finally{if(request===generation)loading=false;}
 }
 
 function shouldRun(){return !paused&&!reducedMotion.matches&&!document.hidden&&inView;}
@@ -62,26 +69,38 @@ function refreshMotion(){
  const running=shouldRun();
  poster.classList.toggle('is-paused',!running);
  motionButton.setAttribute('aria-pressed',String(paused||reducedMotion.matches));
- motionButton.querySelector('span').textContent=reducedMotion.matches?'Рух вимкнено':paused?'Увімкнути рух':'Зупинити рух';
+ const label=reducedMotion.matches?'Анімацію вимкнено в налаштуваннях пристрою':paused?'Продовжити анімацію':'Призупинити анімацію';
+ motionButton.setAttribute('aria-label',label);motionButton.title=label;
  motionButton.disabled=reducedMotion.matches;
  if(!running){
+  captionAnimation?.finish();
   if(frameId!==null)cancelAnimationFrame(frameId);
   frameId=null;previousFrame=null;
  }else if(frameId===null){frameId=requestAnimationFrame(animate);}
 }
+
 function animate(now){
  frameId=null;
  if(!shouldRun()){previousFrame=null;return;}
  if(previousFrame===null)previousFrame=now;
  const delta=now-previousFrame;
- // Match the renderer's work to a steady frame cadence.
  if(delta>=1000/30){
-  previousFrame=now;
-  motionTime+=delta;exampleTime+=delta;angle+=delta*.015;
-  if(exampleTime>=exampleDuration)selectExample(index+1);
+  previousFrame=now;motionTime+=delta;
+  if(!loading&&!initializing)storyTime+=delta;
+  if(storyTime>=timing.end){void prepareStory(index+1);}
+  else{
+   const nextPhase=storyTime>=timing.solveEnd?'startup':storyTime>=timing.solveStart?'solving':'idea';
+   if(nextPhase!==phase)setCaption(nextPhase,{animate:nextPhase!=='solving'});
+   if(ready&&!loading){
+    const progress=Math.max(0,Math.min(1,(storyTime-timing.solveStart)/(timing.solveEnd-timing.solveStart)));
+    player.timestamp=duration*progress;
+   }
+  }
+  const celebration=phase==='startup'&&storyTime<timing.solveEnd+800;
+  angle+=delta*(celebration ? .06 : phase==='solving' ? .025 : .012);
   if(ready){
    player.cameraLongitude=angle;
-   player.cameraLatitude=26+8*Math.sin(motionTime/8500);
+   player.cameraLatitude=24+10*Math.sin(motionTime/2100);
   }
  }
  frameId=requestAnimationFrame(animate);
@@ -90,27 +109,28 @@ function animate(now){
 async function initialize(){
  try{
   player=new TwistyPlayer({
-   puzzle:'3x3x3',alg:'',experimentalSetupAlg:"R U F L D R' B U' L F' D B'",
+   puzzle:'3x3x3',experimentalSetupAnchor:'end',
    background:'none',controlPanel:'none',hintFacelets:'none',backView:'none',viewerLink:'none',
    experimentalMovePressInput:'none',experimentalDragInput:'none',
-   cameraLatitude:26,cameraLongitude:angle,experimentalFaceletScale:.91
+   cameraLatitude:24,cameraLongitude:angle,cameraDistance:5.3,experimentalFaceletScale:.91
   });
-  player.setAttribute('aria-hidden','true');
-  q('#cube-player-host').append(player);
+  player.setAttribute('aria-hidden','true');q('#cube-player-host').append(player);
+  await prepareStory(index,{animate:false});
   await player.experimentalCurrentThreeJSPuzzleObject();
   await player.experimentalCurrentCanvases();
   player.cameraLongitude=angle;
-  ready=true;q('#cube-view').classList.add('cube-ready');
- }catch(error){console.error('Cube illustration unavailable',error);}
+  ready=true;initializing=false;q('#cube-view').classList.add('cube-ready');
+ }catch(error){loading=false;initializing=false;console.error('Cube illustration unavailable',error);}
 }
 
-q('#cube-previous').addEventListener('click',()=>selectExample(index-1));
-q('#cube-next').addEventListener('click',()=>selectExample(index+1));
 motionButton.addEventListener('click',()=>{paused=!paused;refreshMotion();});
-reducedMotion.addEventListener('change',()=>{captionAnimation?.cancel();refreshMotion();});
+reducedMotion.addEventListener('change',()=>{
+ captionAnimation?.cancel();
+ if(player){player.timestamp=reducedMotion.matches?duration:0;}
+ storyTime=0;setCaption('idea',{animate:false});refreshMotion();
+});
 document.addEventListener('visibilitychange',refreshMotion);
 const visibility=new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;refreshMotion();},{threshold:0});
 visibility.observe(poster);
-selectExample(0,{animate:false});
-refreshMotion();
+setCaption('idea',{animate:false});refreshMotion();
 if(document.readyState==='loading')addEventListener('DOMContentLoaded',initialize,{once:true});else void initialize();
