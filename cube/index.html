@@ -26,10 +26,10 @@
   <meta name="twitter:image:alt" content="Venture Layer. Від задуму до самостійного продукту. Різнокольоровий кубик як образ шляху проєкту.">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="preload" href="../hallmark/nunito.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="../hallmark/styles.css?v=20261113-feedback"><link rel="stylesheet" href="cube.css?v=20261113-cube">
+  <link rel="stylesheet" href="../hallmark/styles.css?v=20261113-feedback"><link rel="stylesheet" href="cube.css?v=20261114-stories">
   <script src="../hallmark/app.js?v=20261113-feedback" defer></script>
   <script src="../references.js?v=20261113-feedback" defer></script>
-<script type="importmap">{"imports": {"cubing/alg": "./vendor/cubing/alg/index.js", "cubing/twisty": "./vendor/cubing/twisty/index.js", "cubing/puzzles": "./vendor/cubing/puzzles/index.js", "three/": "./vendor/three/"}}</script><script type="module" src="cube.js?v=20261113-cube"></script></head>
+<script type="importmap">{"imports": {"cubing/alg": "./vendor/cubing/alg/index.js", "cubing/twisty": "./vendor/cubing/twisty/index.js", "cubing/puzzles": "./vendor/cubing/puzzles/index.js", "three/": "./vendor/three/"}}</script><script type="module" src="cube.js?v=20261114-stories"></script></head>
 <body>
 <a class="skip-link" href="#main">До змісту</a>
 <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -59,17 +59,13 @@
 <p class="hero-description">Venture Layer допомагає університетським командам перевірити свої задуми й розвивати продукти.</p>
 <div class="cube-hero-actions"><a class="button button-dark" href="#journey">Як це працює <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="cube-identity-link" href="identity.html">Кубик як айдентика</a></div>
 </div>
-<div class="cube-poster" aria-label="Інтерактивна ілюстрація шляху проєкту">
-<div class="cube-case-heading"><span id="cube-origin">Власна ініціатива</span><h2 id="cube-case-name">Студентський петпроєкт</h2></div>
-<div class="cube-view" id="cube-view"><img class="cube-fallback" src="stages/ideation.svg" alt="Різнокольоровий кубик" width="360" height="375"><div class="cube-player-host" id="cube-player-host"></div><span class="cube-drag-hint">Потягніть кубик, щоб роздивитися</span></div>
-<div class="cube-actions"><button type="button" id="cube-play" class="cube-play" disabled>Показати шлях</button><button type="button" id="cube-reset" class="cube-utility" disabled aria-label="Повернути початковий стан"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1.5 7M4 4v6h6"/></svg></button><button type="button" id="cube-turn" class="cube-utility" disabled aria-label="Показати іншу грань"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7Zm0 10 9-5M12 12 3 7m9 5v10"/></svg></button></div>
-<div class="cube-cases" role="group" aria-label="Оберіть початковий стан проєкту"><button type="button" data-cube-case="pet" aria-pressed="true">Петпроєкт</button><button type="button" data-cube-case="hackathon" aria-pressed="false">Після хакатону</button><button type="button" data-cube-case="research" aria-pressed="false">Дослідження</button><button type="button" data-cube-case="university" aria-pressed="false">Задача університету</button><button type="button" data-cube-case="partner" aria-pressed="false">Запит партнера</button></div>
+<div class="cube-poster" aria-label="Приклади проєктів із трьох джерел">
+<div class="cube-poster-top"><span id="cube-origin">Власна ініціатива</span><span class="cube-example-count" id="cube-example-count" aria-hidden="true">01 / 09</span></div>
+<div class="cube-view" id="cube-view" role="img" aria-label="Кубик із різнокольоровими гранями"><img class="cube-fallback" src="logo.svg" alt="" width="360" height="375"><div class="cube-player-host" id="cube-player-host" aria-hidden="true"></div></div>
+<div class="cube-caption" id="cube-caption"><p class="cube-example-kind" id="cube-example-kind">Студентський петпроєкт</p><h2 id="cube-case-name">Пошук у власних конспектах</h2><p id="cube-case-description">Студент зробив інструмент для своїх нотаток і хоче розвинути його для інших.</p></div>
+<div class="cube-example-navigation"><button type="button" class="cube-arrow" id="cube-previous" aria-label="Попередній приклад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button><div class="cube-example-dots" id="cube-example-dots" role="group" aria-label="Обрати приклад проєкту"></div><button type="button" class="cube-arrow" id="cube-next" aria-label="Наступний приклад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button></div>
+<div class="cube-poster-bottom"><span>Уявні приклади з трьох джерел</span><button type="button" class="cube-motion-toggle" id="cube-motion-toggle" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="cube-pause-icon" d="M7 5v10M13 5v10"/><path class="cube-play-icon" d="m7 4 8 6-8 6Z"/></svg><span>Зупинити рух</span></button></div>
 </div>
-</section>
-<section class="cube-path section-wrap" aria-label="Шлях проєкту на прикладі кубика">
-<div class="cube-track" role="group" aria-label="Перейти до етапу"><button type="button" data-cube-step="0" aria-current="step"><span>G1</span> Задум</button><button type="button" data-cube-step="1"><span>G2</span> Перевірка</button><button type="button" data-cube-step="2"><span>G3</span> Рішення</button><button type="button" data-cube-step="3"><span>G4</span> Самостійність</button></div>
-<div class="cube-path-line" aria-hidden="true"><i id="cube-path-progress"></i></div>
-<div class="cube-path-copy" aria-live="polite"><h2 id="cube-phase-title">З чого почати?</h2><p id="cube-phase-text">Venture Lead допомагає з’ясувати, що важливо перевірити спочатку. Team Lead формує команду для подальшої роботи.</p></div>
 </section>
 <div class="chapter-ribbon" aria-label="Зміст путівника"><a href="#sources"><span>01</span> Звідки ідея</a><a href="#journey"><span>02</span> Як вона росте</a><a href="#pilot-bonuses"><span>03</span> Винагорода</a><a href="#people"><span>04</span> Хто допомагає</a><a href="#decisions"><span>05</span> Куди далі</a></div>
 

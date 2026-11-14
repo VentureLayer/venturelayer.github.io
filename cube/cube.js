@@ -1,130 +1,116 @@
 import { TwistyPlayer } from 'cubing/twisty';
-import { Alg } from 'cubing/alg';
 
 const q=selector=>document.querySelector(selector);
-const qa=selector=>[...document.querySelectorAll(selector)];
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
-const examples={
- pet:{name:'Студентський петпроєкт',origin:'Власна ініціатива',source:'initiative',scramble:"R U F L D R' B U' L F' D B'",camera:35},
- hackathon:{name:'Прототип після хакатону',origin:'Власна ініціатива',source:'initiative',scramble:"F R U R' U' F' L D L' D'",camera:-35},
- research:{name:'Дослідницьке напрацювання',origin:'Ініціатива дослідницької групи',source:'initiative',scramble:"L F U B' D R' U' F' B D' R L'",camera:125},
- university:{name:'Практична задача університету',origin:'Внутрішня потреба університету',source:'university',scramble:"U R F' D L' B R' U' F L D' B'",camera:45},
- partner:{name:'Задача від партнера',origin:'Запит зовнішньої організації',source:'partner',scramble:"B U L' F R D' L B' U' R' F' D",camera:-125}
-};
-const phases=[
- {title:'З чого почати?',text:'Venture Lead допомагає з’ясувати, що важливо перевірити спочатку. Team Lead формує команду для подальшої роботи.'},
- {title:'Перевірити задум',text:'Команда досліджує проблему й наявні рішення. Перевіряє, чи потрібен майбутній продукт користувачам і чи можна реалізувати задум.'},
- {title:'Створити й перевірити рішення',text:'Команда розробляє рішення та перевіряє його з користувачами. Venture Lead допомагає організувати перевірки й розглядає їхні результати.'},
- {title:'Продовжувати самостійно',text:'Команда сама організовує роботу, має потрібний ресурс і врегульовані права. Рішення go на G4 ухвалює Supervisory Board.'}
+const examples=[
+ {source:'initiative',origin:'Власна ініціатива',kind:'Студентський петпроєкт',name:'Пошук у власних конспектах',description:'Студент зробив інструмент для своїх нотаток і хоче розвинути його для інших.'},
+ {source:'university',origin:'Потреба університету',kind:'Сервіс для студентів',name:'Розклад без плутанини',description:'Університету потрібен зручний спосіб повідомляти студентів про зміни занять та аудиторій.'},
+ {source:'partner',origin:'Задача зовнішнього партнера',kind:'Запит від клініки',name:'Черга, яку видно наперед',description:'Клініка шукає спосіб показувати відвідувачам час очікування та зміни в черзі.'},
+ {source:'initiative',origin:'Власна ініціатива',kind:'Прототип після хакатону',name:'Маршрут без бар’єрів',description:'Після хакатону залишився прототип карти доступних маршрутів містом. Команда хоче продовжити роботу.'},
+ {source:'university',origin:'Потреба університету',kind:'Задача від кафедри',name:'Прилади, які можна забронювати',description:'Кафедрі потрібен спільний календар, щоб студенти й дослідники могли планувати роботу з обладнанням.'},
+ {source:'partner',origin:'Задача зовнішнього партнера',kind:'Запит від підприємства',name:'Менше простою на виробництві',description:'Підприємство шукає спосіб завчасно помічати ознаки несправності обладнання.'},
+ {source:'initiative',origin:'Власна ініціатива',kind:'Дослідницьке напрацювання',name:'Робот для перевірки труб',description:'Дослідницька група має лабораторний прототип робота для огляду важкодоступних ділянок.'},
+ {source:'university',origin:'Потреба університету',kind:'Підтримка студентської практики',name:'Знайти свою практику',description:'Університет хоче поєднати пропозиції практики з інтересами й навичками студентів.'},
+ {source:'partner',origin:'Задача зовнішнього партнера',kind:'Запит від мережі магазинів',name:'Менше зіпсованих продуктів',description:'Мережа шукає спосіб точніше планувати запаси продуктів із коротким терміном зберігання.'}
 ];
 
-// Reuse the guide's existing illustration mechanism, with cube artwork for this variant.
+// Keep the guide's existing illustration mechanism. The hero is an independent illustration.
 const stageImages={seed:'ideation',sprout:'validation',build:'creation',flower:'spinout'};
 for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<img src="stages/${image}.svg" alt="" width="180" height="188">`;
 renderStage();
 
-const playButton=q('#cube-play'),resetButton=q('#cube-reset'),turnButton=q('#cube-turn');
-let player=null,indexer=null,moveCount=0,duration=0,stepTimes=[0,0,0,0],phase=0,playing=false,complete=false;
-let generation=0,loading=true,lastProgress=-1;
+const poster=q('.cube-poster');
+const caption=q('#cube-caption');
+const motionButton=q('#cube-motion-toggle');
+const dots=q('#cube-example-dots');
+const exampleDuration=6000;
+let player=null,ready=false,index=0,exampleTime=0,angle=35,motionTime=0;
+let paused=false,inView=false,frameId=null,previousFrame=null,captionAnimation=null;
 
-function updatePlayLabel(){
- if(reducedMotion.matches)playButton.textContent=complete?'Почати знову':'Наступний етап';
- else playButton.textContent=playing?'Пауза':complete?'Показати ще раз':'Показати шлях';
-}
-function paintStep(next,progress=0){
- const changed=phase!==next;
- phase=next;
- qa('[data-cube-step]').forEach(b=>{
-  if(Number(b.dataset.cubeStep)===next)b.setAttribute('aria-current','step');
-  else b.removeAttribute('aria-current');
- });
- if(changed||q('#cube-phase-title').textContent!==phases[next].title){
-  q('#cube-phase-title').textContent=phases[next].title;
-  q('#cube-phase-text').textContent=phases[next].text;
-  state.stage=next;renderStage();remember();
+examples.forEach((example,i)=>{
+ const button=document.createElement('button');
+ button.type='button';button.dataset.cubeExample=String(i);
+ button.setAttribute('aria-label',`${example.origin}: ${example.name}`);
+ button.title=example.name;
+ button.innerHTML='<span aria-hidden="true"></span>';
+ button.addEventListener('click',()=>selectExample(i));
+ dots.append(button);
+});
+
+function selectExample(next,{animate=true}={}){
+ index=(next+examples.length)%examples.length;
+ exampleTime=0;
+ const example=examples[index];
+ q('#cube-origin').textContent=example.origin;
+ q('#cube-example-kind').textContent=example.kind;
+ q('#cube-case-name').textContent=example.name;
+ q('#cube-case-description').textContent=example.description;
+ q('#cube-example-count').textContent=`${String(index+1).padStart(2,'0')} / ${String(examples.length).padStart(2,'0')}`;
+ poster.dataset.source=example.source;
+ [...dots.children].forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+ captionAnimation?.cancel();
+ if(animate&&!reducedMotion.matches){
+  captionAnimation=caption.animate([
+   {opacity:0,transform:'translateY(10px)'},
+   {opacity:1,transform:'translateY(0)'}
+  ],{duration:550,easing:'cubic-bezier(.2,.7,.2,1)'});
  }
- if(Math.abs(progress-lastProgress)>.002||progress===0||progress===1){
-  q('#cube-path-progress').style.transform=`scaleX(${progress})`;lastProgress=progress;
+}
+
+function shouldRun(){return !paused&&!reducedMotion.matches&&!document.hidden&&inView;}
+function refreshMotion(){
+ const running=shouldRun();
+ poster.classList.toggle('is-paused',!running);
+ motionButton.setAttribute('aria-pressed',String(paused||reducedMotion.matches));
+ motionButton.querySelector('span').textContent=reducedMotion.matches?'Рух вимкнено':paused?'Увімкнути рух':'Зупинити рух';
+ motionButton.disabled=reducedMotion.matches;
+ if(!running){
+  if(frameId!==null)cancelAnimationFrame(frameId);
+  frameId=null;previousFrame=null;
+ }else if(frameId===null){frameId=requestAnimationFrame(animate);}
+}
+function animate(now){
+ frameId=null;
+ if(!shouldRun()){previousFrame=null;return;}
+ if(previousFrame===null)previousFrame=now;
+ const delta=now-previousFrame;
+ // Match the renderer's work to a steady frame cadence.
+ if(delta>=1000/30){
+  previousFrame=now;
+  motionTime+=delta;exampleTime+=delta;angle+=delta*.015;
+  if(exampleTime>=exampleDuration)selectExample(index+1);
+  if(ready){
+   player.cameraLongitude=angle;
+   player.cameraLatitude=26+8*Math.sin(motionTime/8500);
+  }
  }
-}
-
-async function selectExample(key,{syncGuide=true}={}){
- const example=examples[key];if(!example||!player)return;
- const request=++generation;loading=true;complete=false;playing=false;
- player.pause();
- q('#cube-case-name').textContent=example.name;q('#cube-origin').textContent=example.origin;
- qa('[data-cube-case]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.cubeCase===key)));
- player.alg=new Alg(example.scramble).invert();
- player.experimentalSetupAnchor='end';player.timestamp='start';
- player.cameraLongitude=example.camera;
- const nextIndexer=await player.experimentalModel.indexer.get();
- if(request!==generation)return;
- indexer=nextIndexer;moveCount=indexer.numAnimatedLeaves();duration=indexer.algDuration();
- stepTimes=[0,1,2,3].map(step=>step===3?duration:indexer.indexToMoveStartTimestamp(Math.round(moveCount*step/3)));
- loading=false;
- if(syncGuide){state.source=example.source;state.stage=0;renderSource();paintStep(0,0);}
- else jumpToStep(state.stage);
- updatePlayLabel();
-}
-
-function jumpToStep(next){
- if(!player||!indexer||loading)return;
- player.pause();playing=false;
- const leaf=Math.round(moveCount*next/3);
- player.timestamp=stepTimes[next];
- complete=next===3;paintStep(next,leaf/moveCount);updatePlayLabel();
+ frameId=requestAnimationFrame(animate);
 }
 
 async function initialize(){
  try{
-  player=new TwistyPlayer({puzzle:'3x3x3',background:'none',controlPanel:'none',hintFacelets:'none',backView:'none',viewerLink:'none',experimentalMovePressInput:'none',cameraLatitude:27,cameraLongitude:35,tempoScale:1.55,experimentalFaceletScale:.91,experimentalSetupAnchor:'end'});
-  player.setAttribute('aria-label','Об’ємний кубик: його можна обертати й переглядати шлях проєкту');
-  q('#cube-player-host').append(player);
-  player.experimentalModel.detailedTimelineInfo.addFreshListener(info=>{
-   if(loading||!duration)return;
-   const progress=Math.max(0,Math.min(1,info.timestamp/duration));
-   const next=progress>=.999?3:info.timestamp>=stepTimes[2]-.001?2:info.timestamp>=stepTimes[1]-.001?1:0;
-   complete=progress>=.999;paintStep(next,progress);updatePlayLabel();
+  player=new TwistyPlayer({
+   puzzle:'3x3x3',alg:'',experimentalSetupAlg:"R U F L D R' B U' L F' D B'",
+   background:'none',controlPanel:'none',hintFacelets:'none',backView:'none',viewerLink:'none',
+   experimentalMovePressInput:'none',experimentalDragInput:'none',
+   cameraLatitude:26,cameraLongitude:angle,experimentalFaceletScale:.91
   });
-  player.experimentalModel.playingInfo.addFreshListener(info=>{playing=info.playing;updatePlayLabel();});
-  const initial=Object.keys(examples).find(key=>examples[key].source===state.source)||'pet';
-  await selectExample(initial,{syncGuide:false});
+  player.setAttribute('aria-hidden','true');
+  q('#cube-player-host').append(player);
   await player.experimentalCurrentThreeJSPuzzleObject();
   await player.experimentalCurrentCanvases();
-  q('#cube-view').classList.add('cube-ready');
-  for(const b of [playButton,resetButton,turnButton])b.disabled=false;
- }catch(error){
-  q('.cube-drag-hint').textContent='Шлях проєкту можна переглянути нижче.';
-  q('.cube-drag-hint').style.visibility='visible';
-  console.error('Cube preview unavailable',error);
- }
+  player.cameraLongitude=angle;
+  ready=true;q('#cube-view').classList.add('cube-ready');
+ }catch(error){console.error('Cube illustration unavailable',error);}
 }
 
-playButton.addEventListener('click',()=>{
- if(!player||loading)return;
- if(reducedMotion.matches){jumpToStep(complete?0:Math.min(3,phase+1));return;}
- if(playing){player.pause();return;}
- if(complete){player.jumpToStart();paintStep(0,0);complete=false;}
- player.play();
-});
-resetButton.addEventListener('click',()=>jumpToStep(0));
-turnButton.addEventListener('click',async()=>{
- if(!player)return;
- const orbit=await player.experimentalModel.twistySceneModel.orbitCoordinates.get();
- player.cameraLongitude=orbit.longitude+90;
-});
-qa('[data-cube-case]').forEach(b=>b.addEventListener('click',()=>{void selectExample(b.dataset.cubeCase);}));
-qa('[data-cube-step]').forEach(b=>b.addEventListener('click',()=>jumpToStep(Number(b.dataset.cubeStep))));
-qa('.source-option[data-source]').forEach(b=>b.addEventListener('click',()=>{
- const key=Object.keys(examples).find(key=>examples[key].source===b.dataset.source);
- if(key)void selectExample(key,{syncGuide:false});
-}));
-qa('[data-stage]').forEach(b=>b.addEventListener('click',()=>jumpToStep(Number(b.dataset.stage))));
-qa('#stage-prev,#stage-next').forEach(b=>b.addEventListener('click',()=>jumpToStep(state.stage)));
-addEventListener('hashchange',()=>{const match=location.hash.match(/^#g([1-4])$/);if(match)jumpToStep(Number(match[1])-1);});
-reducedMotion.addEventListener('change',()=>{if(player)jumpToStep(phase);updatePlayLabel();});
-document.addEventListener('visibilitychange',()=>{if(document.hidden)player?.pause();});
-const visibility=new IntersectionObserver(entries=>{if(!entries[0].isIntersecting)player?.pause();},{threshold:0});
-visibility.observe(q('.cube-poster'));
-
+q('#cube-previous').addEventListener('click',()=>selectExample(index-1));
+q('#cube-next').addEventListener('click',()=>selectExample(index+1));
+motionButton.addEventListener('click',()=>{paused=!paused;refreshMotion();});
+reducedMotion.addEventListener('change',()=>{captionAnimation?.cancel();refreshMotion();});
+document.addEventListener('visibilitychange',refreshMotion);
+const visibility=new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;refreshMotion();},{threshold:0});
+visibility.observe(poster);
+selectExample(0,{animate:false});
+refreshMotion();
 if(document.readyState==='loading')addEventListener('DOMContentLoaded',initialize,{once:true});else void initialize();
