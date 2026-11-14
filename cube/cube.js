@@ -4,15 +4,15 @@ import { Alg } from 'cubing/alg';
 const q=selector=>document.querySelector(selector);
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const stories=[
- {source:'initiative',need:'Хочу знати, коли перенесли пару',summary:'Сервіс розкладів для університетів',product:'Платформа для розкладів університетів у різних країнах: заняття, аудиторії й усі зміни — в одному місці.',scramble:"R U F L D R' B U'"},
- {source:'university',need:'Хочемо знати, які аудиторії зараз вільні',summary:'Бронювання приміщень онлайн',product:'Сервіс бронювання приміщень для університетів, офісів і коворкінгів по всьому світу.',scramble:"F R U R' U' F' L D"},
- {source:'partner',need:'Хочемо, щоб люди менше чекали в черзі',summary:'Електронні черги та запис',product:'Платформа запису й електронних черг для клінік, банків і сервісних центрів у різних країнах.',scramble:"L F U B' D R' U' F'"},
- {source:'initiative',need:'Хочу легко ділити витрати з друзями',summary:'Облік спільних витрат',product:'Застосунок для спільних витрат у подорожах і спільному житлі. Для компаній друзів у будь-якій країні.',scramble:"U R F' D L' B R' U'"},
- {source:'university',need:'Хочемо, щоб студентам було простіше отримати довідку',summary:'Студентські послуги онлайн',product:'Цифровий студентський офіс: заяви, документи й відповіді онлайн. Продукт для університетів у різних країнах.',scramble:"B U L' F R D' L B'"},
- {source:'partner',need:'Хочемо списувати менше їжі наприкінці дня',summary:'Планування закупівель для кафе',product:'Сервіс планування закупівель і залишків для кафе та ресторанів — від одного закладу до міжнародних мереж.',scramble:"R F U L' B D R' F'"},
- {source:'initiative',need:'Хочу знайти того, хто пояснить складну тему',summary:'Пошук викладачів онлайн',product:'Платформа, де учні й студенти знаходять викладачів для онлайн-занять незалежно від міста та країни.',scramble:"D R B U' L F D' R'"},
- {source:'university',need:'Хочемо, щоб студентам було легше знайти практику',summary:'Пошук студентських стажувань',product:'Платформа стажувань, яка поєднує студентів, університети й роботодавців у різних країнах.',scramble:"F L D B' R U F' L'"},
- {source:'partner',need:'Хочемо простіше оформлювати повернення товарів',summary:'Повернення товарів онлайн',product:'Сервіс повернень і обміну для інтернет-магазинів, які продають у різних країнах.',scramble:"B R D F' U L B' R'"}
+ {source:'initiative',need:'Хочу знати, коли перенесли пару',summary:'Сервіс розкладів для університетів',product:'Заняття, аудиторії й усі зміни — в одному місці для університетів у різних країнах.',scramble:"R U F L D R' B U'"},
+ {source:'university',need:'Хочемо знати, які аудиторії зараз вільні',summary:'Платформа бронювання приміщень',product:'Єдиний календар доступних просторів для університетів, офісів і коворкінгів по всьому світу.',scramble:"F R U R' U' F' L D"},
+ {source:'partner',need:'Хочемо, щоб люди менше чекали в черзі',summary:'Сервіс електронних черг і запису',product:'Запис на прийом і керування чергами для клінік, банків і сервісних центрів у різних країнах.',scramble:"L F U B' D R' U' F'"},
+ {source:'initiative',need:'Хочу легко ділити витрати з друзями',summary:'Сервіс обліку спільних витрат',product:'Допомагає друзям вести спільний бюджет у подорожах і спільному житлі — у будь-якій країні.',scramble:"U R F' D L' B R' U'"},
+ {source:'university',need:'Хочемо, щоб студентам було простіше отримати довідку',summary:'Платформа студентських послуг',product:'Заяви, документи й відповіді онлайн для студентів та працівників університетів у різних країнах.',scramble:"B U L' F R D' L B'"},
+ {source:'partner',need:'Хочемо списувати менше їжі наприкінці дня',summary:'Сервіс планування закупівель',product:'Планує закупівлі й відстежує залишки — від одного кафе до міжнародної мережі ресторанів.',scramble:"R F U L' B D R' F'"},
+ {source:'initiative',need:'Хочу знайти того, хто пояснить складну тему',summary:'Платформа пошуку викладачів',product:'Учні й студенти знаходять викладачів за предметом і мовою, незалежно від міста та країни.',scramble:"D R B U' L F D' R'"},
+ {source:'university',need:'Хочемо, щоб студентам було легше знайти практику',summary:'Платформа студентських стажувань',product:'Поєднує студентів, університети й роботодавців для пошуку практики в різних країнах.',scramble:"F L D B' R U F' L'"},
+ {source:'partner',need:'Хочемо простіше оформлювати повернення товарів',summary:'Сервіс повернення товарів',product:'Допомагає інтернет-магазинам оформлювати повернення й обмін, зокрема для міжнародних замовлень.',scramble:"B R D F' U L B' R'"}
 ];
 
 // Reuse the guide's art. The automatic hero has no effect on the guide's stage or source.
@@ -21,6 +21,7 @@ for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<img src="sta
 renderStage();
 
 const poster=q('.cube-poster'),caption=q('#cube-caption'),motionButton=q('#cube-motion-toggle');
+const bootScramble="R U F L D R' B U'";
 const timing={solveStart:2600,solveEnd:5000,end:9800};
 let player=null,ready=false,index=-1,storyTime=0,motionTime=0,duration=0;
 let paused=false,inView=false,loading=false,initializing=true,frameId=null,previousFrame=null,captionAnimation=null;
@@ -54,7 +55,6 @@ function setCaption(next,{animate=true}={}){
  q('#cube-example-kind').textContent=next==='startup'?'Може вирости в…':next==='solving'?'Перевіряємо, кому ще це потрібно':'Усе починається з…';
  q('#cube-case-name').textContent=next==='startup'?story.summary:`«${story.need}»`;
  q('#cube-case-description').textContent=next==='startup'?story.product:'';
- q('.cube-fallback').src=next==='startup'?'marks/solved.svg':'logo.svg';
  captionAnimation?.cancel();
  if(animate&&!reducedMotion.matches){
   captionAnimation=caption.animate([
@@ -74,13 +74,12 @@ async function prepareStory(next,{animate=true}={}){
  index=next%stories.length;storyTime=0;loading=true;
  setCaption('idea',{animate});
  if(!player){loading=false;return;}
- player.alg=new Alg(stories[index].scramble).invert();
+ player.alg=new Alg(initializing?bootScramble:stories[index].scramble).invert();
  player.experimentalSetupAnchor='end';player.timestamp='start';
  try{
   const indexer=await player.experimentalModel.indexer.get();
   if(request!==generation)return;
   duration=indexer.algDuration();
-  if(reducedMotion.matches)player.timestamp=duration;
  }finally{if(request===generation)loading=false;}
 }
 
@@ -105,7 +104,7 @@ function animate(now){
  if(previousFrame===null)previousFrame=now;
  const delta=now-previousFrame;
  if(delta>=1000/30){
-  previousFrame=now;motionTime+=delta;
+  previousFrame=now;if(!initializing)motionTime+=delta;
   if(!loading&&!initializing)storyTime+=delta;
   if(storyTime>=timing.end){void prepareStory(drawNextStory());}
   else{
@@ -133,11 +132,15 @@ async function initialize(){
    cameraLatitude:35,cameraLongitude:45,cameraDistance:6.8,experimentalFaceletScale:.90,
    experimentalStickering:'picture',experimentalSprite:new URL('palette.svg?v=20261114-original-colors',import.meta.url).href
   });
+  player.experimentalSetFlashLevel('none');
   player.setAttribute('aria-hidden','true');q('#cube-player-host').append(player);
   await prepareStory(index,{animate:false});
   await player.experimentalCurrentThreeJSPuzzleObject();
-  await player.experimentalCurrentCanvases();
-  player.cameraLongitude=45+9*Math.sin(motionTime/2400);
+  const canvases=await player.experimentalCurrentCanvases();
+  player.cameraLongitude=45;
+  await new Promise(requestAnimationFrame);
+  await new Promise(requestAnimationFrame);
+  await Promise.all(canvases.flatMap(canvas=>canvas.getAnimations().map(animation=>animation.finished)));
   ready=true;initializing=false;q('#cube-view').classList.add('cube-ready');
  }catch(error){loading=false;initializing=false;console.error('Cube illustration unavailable',error);}
 }
@@ -145,7 +148,7 @@ async function initialize(){
 motionButton.addEventListener('click',()=>{paused=!paused;refreshMotion();});
 reducedMotion.addEventListener('change',()=>{
  captionAnimation?.cancel();
- if(player){player.timestamp=reducedMotion.matches?duration:0;}
+ if(player){player.timestamp=0;}
  storyTime=0;setCaption('idea',{animate:false});refreshMotion();
 });
 document.addEventListener('visibilitychange',refreshMotion);
