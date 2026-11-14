@@ -118,13 +118,19 @@
 }
 @media(prefers-reduced-motion:reduce) { .cube-fallback,.cube-player-host { transition:none; animation:none; }.cube-sparks { display:none; } }
 
-/* The illustrated hand joins only the solving portion of the automatic story. */
-.lead-hand { position:absolute; z-index:3; width:170px; right:-10px; top:37%; opacity:0; transform:translate(90px,25px) rotate(12deg); transition:opacity .24s,transform .42s cubic-bezier(.16,1,.3,1); pointer-events:none; }
-.lead-hand-art { display:block; width:100%; height:auto; transform-origin:12% 38%; }
-.lead-hand>span { position:absolute; right:8px; bottom:0; padding:5px 10px; border:1.5px solid var(--color-ink); border-radius:8px; background:var(--color-paper); color:var(--color-ink); font:750 12px/1.3 var(--font-body); white-space:nowrap; }
-.cube-poster[data-phase=solving] .lead-hand { opacity:1; transform:translate(0,0) rotate(-8deg); }
-.cube-poster[data-phase=solving] .lead-hand-art { animation:lead-hand-turn .65s ease-in-out infinite alternate; }
-@keyframes lead-hand-turn { from { transform:rotate(-3deg) translate(0,-2px); } to { transform:rotate(7deg) translate(-5px,3px); } }
-.cube-poster.is-paused .lead-hand-art { animation-play-state:paused; }
-@media(max-width:700px) { .lead-hand { width:136px; right:-12px; top:40%; }.lead-hand>span { font-size:11px; right:5px; } }
+/* Unmodified Kenney cursor sprites provide the open and closed grip poses. */
+.lead-hand { position:absolute; z-index:3; width:96px; right:4%; top:44%; opacity:0; transform:translate(75px,18px); transition:opacity .24s,transform .42s cubic-bezier(.16,1,.3,1); pointer-events:none; }
+.lead-hand-art { position:relative; display:block; width:100%; aspect-ratio:1; transform:rotate(-65deg); transform-origin:30% 50%; }
+.lead-hand-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+.hand-closed { opacity:0; }
+.lead-hand>span:last-child { position:absolute; right:-10px; bottom:-15px; padding:5px 8px; border:1.5px solid var(--color-ink); border-radius:8px; background:var(--color-paper); color:var(--color-ink); font:750 11px/1.3 var(--font-body); white-space:nowrap; }
+.cube-poster[data-phase=solving] .lead-hand { opacity:1; transform:translate(0,0); }
+.cube-poster[data-phase=solving] .lead-hand-art { animation:lead-hand-turn .8s ease-in-out infinite; }
+.cube-poster[data-phase=solving] .hand-open { animation:lead-hand-open .8s steps(1,end) infinite; }
+.cube-poster[data-phase=solving] .hand-closed { animation:lead-hand-closed .8s steps(1,end) infinite; }
+@keyframes lead-hand-turn { 0%,100% { transform:rotate(-65deg); } 45%,75% { transform:rotate(-51deg) translate(-4px,2px); } }
+@keyframes lead-hand-open { 0%,85% { opacity:1; } 20% { opacity:0; } }
+@keyframes lead-hand-closed { 0%,85% { opacity:0; } 20% { opacity:1; } }
+.cube-poster.is-paused .lead-hand-art,.cube-poster.is-paused .lead-hand-art img { animation-play-state:paused; }
+@media(max-width:700px) { .lead-hand { width:76px; right:3%; top:45%; }.lead-hand>span:last-child { right:-5px; bottom:-17px; font-size:10px; } }
 @media(prefers-reduced-motion:reduce) { .lead-hand { display:none; } }
