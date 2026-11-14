@@ -17,8 +17,8 @@ const stories=[
 
 // Reuse the guide's art. The automatic hero has no effect on the guide's stage or source.
 const stageImages={seed:'ideation',sprout:'validation',build:'creation',flower:'spinout'};
-const stageCubeLabels={seed:'Зібрана одна грань',sprout:'Зібрані дві грані',build:'Зібрані три грані',flower:'Кубик зібраний'};
-for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<div class="stage-cube-progress"><img src="stages/${image}.svg?v=20261114-progress" alt="${stageCubeLabels[key]}" width="180" height="238"><span>${stageCubeLabels[key]}</span></div>`;
+const stageCubeLabels={seed:'Жодної зібраної грані',sprout:'Зібрана одна грань',build:'Зібрані дві грані',flower:'Зібрані три грані'};
+for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<div class="stage-cube-progress"><img src="stages/${image}.svg?v=20261114-faces0123" alt="${stageCubeLabels[key]}" width="180" height="188"><span>${stageCubeLabels[key]}</span></div>`;
 renderStage();
 
 const poster=q('.cube-poster'),caption=q('#cube-caption'),motionButton=q('#cube-motion-toggle');
