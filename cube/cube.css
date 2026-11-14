@@ -26,10 +26,10 @@
 .cube-player-host,.cube-fallback { animation:cube-bob 4s cubic-bezier(.45,0,.55,1) infinite; }
 @keyframes cube-bob { 0%,100% { transform:translate(-5px,2px) rotate(-3deg); } 50% { transform:translate(6px,-14px) rotate(3deg); } }
 .cube-poster.is-paused .cube-player-host,.cube-poster.is-paused .cube-fallback { animation-play-state:paused; }
-.cube-caption { min-height:172px; padding-top:var(--space-xs); }
+.cube-caption { min-height:200px; padding-top:var(--space-xs); }
 .cube-example-kind { font-size:var(--text-sm); line-height:1.4; color:var(--color-muted); margin-bottom:var(--space-sm); }
 .cube-caption h2 { font-size:clamp(1.45rem,2.25vw,1.9rem); line-height:1.22; letter-spacing:var(--tracking-display); font-weight:750; margin-bottom:var(--space-sm); text-wrap:balance; }
-.cube-poster[data-phase=startup] .cube-caption h2 { font-size:clamp(2rem,3.4vw,2.8rem); line-height:1.1; }
+.cube-poster[data-phase=startup] .cube-caption h2 { font-size:clamp(1.45rem,2.25vw,1.9rem); line-height:1.22; }
 .cube-caption>p:last-child { font-size:var(--text-md); line-height:1.5; color:var(--color-muted); max-width:44ch; }
 .cube-caption>p:last-child:empty { display:none; }
 .cube-sparks { position:absolute; inset:0; pointer-events:none; }
@@ -94,7 +94,7 @@
  .cube-poster { padding:var(--space-lg) var(--space-md); }
  .cube-caption { min-height:225px; }
  .cube-caption h2 { font-size:1.6rem; }
- .cube-poster[data-phase=startup] .cube-caption h2 { font-size:2.25rem; }
+ .cube-poster[data-phase=startup] .cube-caption h2 { font-size:1.6rem; }
  .identity-header { flex-wrap:wrap; }
  .identity-intro { grid-template-columns:minmax(0,1fr); gap:var(--space-lg); padding-block:var(--space-xl); }
  .identity-intro h1 { font-size:clamp(2.8rem,11vw,4rem); }

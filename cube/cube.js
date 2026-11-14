@@ -4,15 +4,15 @@ import { Alg } from 'cubing/alg';
 const q=selector=>document.querySelector(selector);
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const stories=[
- {source:'initiative',origin:'Від студента',need:'Хочу знати, коли перенесли пару',name:'Пара',product:'Платформа для розкладів університетів у різних країнах: заняття, аудиторії й усі зміни — в одному місці.',scramble:"R U F L D R' B U'"},
- {source:'university',origin:'Від університету',need:'Хочемо знати, які аудиторії зараз вільні',name:'Місце',product:'Сервіс бронювання приміщень для університетів, офісів і коворкінгів по всьому світу.',scramble:"F R U R' U' F' L D"},
- {source:'partner',origin:'Від партнера',need:'Хочемо, щоб люди менше чекали в черзі',name:'Своя черга',product:'Платформа запису й електронних черг для клінік, банків і сервісних центрів у різних країнах.',scramble:"L F U B' D R' U' F'"},
- {source:'initiative',origin:'Від студента',need:'Хочу легко ділити витрати з друзями',name:'Порівну',product:'Застосунок для спільних витрат у подорожах і спільному житлі. Для компаній друзів у будь-якій країні.',scramble:"U R F' D L' B R' U'"},
- {source:'university',origin:'Від університету',need:'Хочемо, щоб студентам було простіше отримати довідку',name:'Одна заява',product:'Цифровий студентський офіс: заяви, документи й відповіді онлайн. Продукт для університетів у різних країнах.',scramble:"B U L' F R D' L B'"},
- {source:'partner',origin:'Від партнера',need:'Хочемо списувати менше їжі наприкінці дня',name:'Вчасно',product:'Сервіс планування закупівель і залишків для кафе та ресторанів — від одного закладу до міжнародних мереж.',scramble:"R F U L' B D R' F'"},
- {source:'initiative',origin:'Від студента',need:'Хочу знайти того, хто пояснить складну тему',name:'Поясни',product:'Платформа, де учні й студенти знаходять викладачів для онлайн-занять незалежно від міста та країни.',scramble:"D R B U' L F D' R'"},
- {source:'university',origin:'Від університету',need:'Хочемо, щоб студентам було легше знайти практику',name:'Перший крок',product:'Платформа стажувань, яка поєднує студентів, університети й роботодавців у різних країнах.',scramble:"F L D B' R U F' L'"},
- {source:'partner',origin:'Від партнера',need:'Хочемо простіше оформлювати повернення товарів',name:'Поверни',product:'Сервіс повернень і обміну для інтернет-магазинів, які продають у різних країнах.',scramble:"B R D F' U L B' R'"}
+ {source:'initiative',origin:'Від студента',need:'Хочу знати, коли перенесли пару',summary:'Сервіс розкладів для університетів',product:'Платформа для розкладів університетів у різних країнах: заняття, аудиторії й усі зміни — в одному місці.',scramble:"R U F L D R' B U'"},
+ {source:'university',origin:'Від університету',need:'Хочемо знати, які аудиторії зараз вільні',summary:'Бронювання приміщень онлайн',product:'Сервіс бронювання приміщень для університетів, офісів і коворкінгів по всьому світу.',scramble:"F R U R' U' F' L D"},
+ {source:'partner',origin:'Від партнера',need:'Хочемо, щоб люди менше чекали в черзі',summary:'Електронні черги та запис',product:'Платформа запису й електронних черг для клінік, банків і сервісних центрів у різних країнах.',scramble:"L F U B' D R' U' F'"},
+ {source:'initiative',origin:'Від студента',need:'Хочу легко ділити витрати з друзями',summary:'Облік спільних витрат',product:'Застосунок для спільних витрат у подорожах і спільному житлі. Для компаній друзів у будь-якій країні.',scramble:"U R F' D L' B R' U'"},
+ {source:'university',origin:'Від університету',need:'Хочемо, щоб студентам було простіше отримати довідку',summary:'Студентські послуги онлайн',product:'Цифровий студентський офіс: заяви, документи й відповіді онлайн. Продукт для університетів у різних країнах.',scramble:"B U L' F R D' L B'"},
+ {source:'partner',origin:'Від партнера',need:'Хочемо списувати менше їжі наприкінці дня',summary:'Планування закупівель для кафе',product:'Сервіс планування закупівель і залишків для кафе та ресторанів — від одного закладу до міжнародних мереж.',scramble:"R F U L' B D R' F'"},
+ {source:'initiative',origin:'Від студента',need:'Хочу знайти того, хто пояснить складну тему',summary:'Пошук викладачів онлайн',product:'Платформа, де учні й студенти знаходять викладачів для онлайн-занять незалежно від міста та країни.',scramble:"D R B U' L F D' R'"},
+ {source:'university',origin:'Від університету',need:'Хочемо, щоб студентам було легше знайти практику',summary:'Пошук студентських стажувань',product:'Платформа стажувань, яка поєднує студентів, університети й роботодавців у різних країнах.',scramble:"F L D B' R U F' L'"},
+ {source:'partner',origin:'Від партнера',need:'Хочемо простіше оформлювати повернення товарів',summary:'Повернення товарів онлайн',product:'Сервіс повернень і обміну для інтернет-магазинів, які продають у різних країнах.',scramble:"B R D F' U L B' R'"}
 ];
 
 // Reuse the guide's art. The automatic hero has no effect on the guide's stage or source.
@@ -32,7 +32,7 @@ function setCaption(next,{animate=true}={}){
  q('#cube-origin').textContent=story.origin;
  q('#cube-phase-tag').textContent=next==='startup'?'Можливий стартап':next==='solving'?'Ідея набуває форми':'Просте бажання';
  q('#cube-example-kind').textContent=next==='startup'?'Може вирости в…':next==='solving'?'Перевіряємо, кому ще це потрібно':'Усе починається з…';
- q('#cube-case-name').textContent=next==='startup'?story.name:`«${story.need}»`;
+ q('#cube-case-name').textContent=next==='startup'?story.summary:`«${story.need}»`;
  q('#cube-case-description').textContent=next==='startup'?story.product:'';
  q('.cube-fallback').src=next==='startup'?'marks/solved.svg':'logo.svg';
  captionAnimation?.cancel();
@@ -45,7 +45,7 @@ function setCaption(next,{animate=true}={}){
  if(reducedMotion.matches){
   q('#cube-example-kind').textContent='Отак може початися стартап';
   q('#cube-case-name').textContent=`«${story.need}»`;
-  q('#cube-case-description').textContent=`${story.name} — ${story.product}`;
+  q('#cube-case-description').textContent=story.product;
  }
 }
 
