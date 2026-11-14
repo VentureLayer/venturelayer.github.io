@@ -137,3 +137,5 @@
 .cube-hero~.sources-section .source-option{cursor:default}.source-options article.source-option:hover{background:var(--grain),var(--color-paper-2)}.source-options article.source-option:active{transform:none}
 
 .cube-hero .hero-pay{padding-right:12px}
+
+@media(min-width:701px){.hero.cube-hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.15fr);column-gap:32px}}
