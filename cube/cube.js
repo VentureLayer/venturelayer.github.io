@@ -131,7 +131,7 @@ async function initialize(){
    background:'none',controlPanel:'none',hintFacelets:'none',backView:'none',viewerLink:'none',
    experimentalMovePressInput:'none',experimentalDragInput:'none',
    cameraLatitude:35,cameraLongitude:45,cameraDistance:6.8,experimentalFaceletScale:.90,
-   experimentalStickering:'picture',experimentalSprite:new URL('palette.svg',import.meta.url).href
+   experimentalStickering:'picture',experimentalSprite:new URL('palette.svg?v=20261114-original-colors',import.meta.url).href
   });
   player.setAttribute('aria-hidden','true');q('#cube-player-host').append(player);
   await prepareStory(index,{animate:false});
