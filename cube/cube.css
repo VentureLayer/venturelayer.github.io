@@ -133,3 +133,5 @@
 @media(prefers-reduced-motion:no-preference){.stage-cube-progress img{animation:stage-cube-arrive .55s ease-out both}@keyframes stage-cube-arrive{from{opacity:.4;transform:rotate(-8deg) scale(.9)}to{opacity:1;transform:rotate(0) scale(1)}}}
 
 .cube-hero .hero-pay-label{display:block;font-size:clamp(1.3rem,2vw,1.7rem);font-weight:800;line-height:1.25;color:var(--color-ink);letter-spacing:-.015em;text-transform:none;max-width:32ch;margin-bottom:var(--space-md)}
+
+.cube-hero~.sources-section .source-option{cursor:default}.source-options article.source-option:hover{background:var(--grain),var(--color-paper-2)}.source-options article.source-option:active{transform:none}

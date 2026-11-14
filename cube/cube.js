@@ -15,7 +15,9 @@ const stories=[
  {source:'partner',need:'Хочемо простіше оформлювати повернення товарів',summary:'Сервіс повернення товарів',product:'Допомагає інтернет-магазинам оформлювати повернення й обмін, зокрема для міжнародних замовлень.',scramble:"B R D F' U L B' R'"}
 ];
 
-// Reuse the guide's art. The automatic hero has no effect on the guide's stage or source.
+// One continuous guide example; hero stories remain independent.
+state.source='university';
+renderSource();
 const stageImages={seed:'ideation',sprout:'validation',build:'creation',flower:'spinout'};
 const stageCubeLabels={seed:'Жодної зібраної грані',sprout:'Зібрана одна грань',build:'Зібрані дві грані',flower:'Зібрані три грані'};
 for(const [key,image] of Object.entries(stageImages))art[key]=()=>`<div class="stage-cube-progress"><img src="stages/${image}.svg?v=20261114-faces0123" alt="${stageCubeLabels[key]}" width="180" height="188"><span>${stageCubeLabels[key]}</span></div>`;
