@@ -131,3 +131,5 @@
 
 .stage-cube-progress{display:flex;flex-direction:column;align-items:center;gap:8px;height:100%}.stage-cube-progress img{width:auto;height:calc(100% - 30px);max-width:100%;object-fit:contain}.stage-cube-progress span{font-size:var(--text-sm);font-weight:700;color:var(--color-ink)}
 @media(prefers-reduced-motion:no-preference){.stage-cube-progress img{animation:stage-cube-arrive .55s ease-out both}@keyframes stage-cube-arrive{from{opacity:.4;transform:rotate(-8deg) scale(.9)}to{opacity:1;transform:rotate(0) scale(1)}}}
+
+.cube-hero .hero-pay-label{display:block;font-size:clamp(1.3rem,2vw,1.7rem);font-weight:800;line-height:1.25;color:var(--color-ink);letter-spacing:-.015em;text-transform:none;max-width:32ch;margin-bottom:var(--space-md)}
