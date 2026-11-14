@@ -22,7 +22,7 @@ renderStage();
 
 const poster=q('.cube-poster'),caption=q('#cube-caption'),motionButton=q('#cube-motion-toggle');
 const timing={solveStart:2600,solveEnd:5000,end:9800};
-let player=null,ready=false,index=-1,storyTime=0,motionTime=0,angle=35,duration=0;
+let player=null,ready=false,index=-1,storyTime=0,motionTime=0,duration=0;
 let paused=false,inView=false,loading=false,initializing=true,frameId=null,previousFrame=null,captionAnimation=null;
 let phase='idea',generation=0,remainingStories=[];
 const sources={
@@ -116,11 +116,9 @@ function animate(now){
     player.timestamp=duration*progress;
    }
   }
-  const celebration=phase==='startup'&&storyTime<timing.solveEnd+800;
-  angle+=delta*(celebration ? .06 : phase==='solving' ? .025 : .012);
   if(ready){
-   player.cameraLongitude=angle;
-   player.cameraLatitude=24+10*Math.sin(motionTime/2100);
+   player.cameraLongitude=45+9*Math.sin(motionTime/2400);
+   player.cameraLatitude=35;
   }
  }
  frameId=requestAnimationFrame(animate);
@@ -132,13 +130,14 @@ async function initialize(){
    puzzle:'3x3x3',experimentalSetupAnchor:'end',
    background:'none',controlPanel:'none',hintFacelets:'none',backView:'none',viewerLink:'none',
    experimentalMovePressInput:'none',experimentalDragInput:'none',
-   cameraLatitude:24,cameraLongitude:angle,cameraDistance:5.3,experimentalFaceletScale:.91
+   cameraLatitude:35,cameraLongitude:45,cameraDistance:6.8,experimentalFaceletScale:.90,
+   experimentalStickering:'picture',experimentalSprite:new URL('palette.svg',import.meta.url).href
   });
   player.setAttribute('aria-hidden','true');q('#cube-player-host').append(player);
   await prepareStory(index,{animate:false});
   await player.experimentalCurrentThreeJSPuzzleObject();
   await player.experimentalCurrentCanvases();
-  player.cameraLongitude=angle;
+  player.cameraLongitude=45+9*Math.sin(motionTime/2400);
   ready=true;initializing=false;q('#cube-view').classList.add('cube-ready');
  }catch(error){loading=false;initializing=false;console.error('Cube illustration unavailable',error);}
 }

@@ -30,7 +30,7 @@
 .cube-view { height:var(--cube-stage-height); position:relative; isolation:isolate; margin-block:var(--space-sm); }
 .cube-fallback { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; padding:var(--space-lg); transition:opacity var(--dur-short) var(--ease-out); pointer-events:none; }
 .cube-player-host { position:absolute; inset:0; opacity:0; transition:opacity var(--dur-short) var(--ease-out); pointer-events:none; }
-.cube-player-host twisty-player { display:grid; width:100%; height:var(--cube-stage-height); filter:saturate(.7) sepia(.08); }
+.cube-player-host twisty-player { display:grid; width:100%; height:var(--cube-stage-height); transform:scale(1.25); }
 .cube-ready .cube-player-host { opacity:1; }
 .cube-ready .cube-fallback { opacity:0; }
 .cube-player-host,.cube-fallback { animation:cube-bob 4s cubic-bezier(.45,0,.55,1) infinite; }
@@ -117,3 +117,14 @@
  .identity-footer { flex-direction:column; }
 }
 @media(prefers-reduced-motion:reduce) { .cube-fallback,.cube-player-host { transition:none; animation:none; }.cube-sparks { display:none; } }
+
+/* The illustrated hand joins only the solving portion of the automatic story. */
+.lead-hand { position:absolute; z-index:3; width:170px; right:-10px; top:37%; opacity:0; transform:translate(90px,25px) rotate(12deg); transition:opacity .24s,transform .42s cubic-bezier(.16,1,.3,1); pointer-events:none; }
+.lead-hand-art { display:block; width:100%; height:auto; transform-origin:12% 38%; }
+.lead-hand>span { position:absolute; right:8px; bottom:0; padding:5px 10px; border:1.5px solid var(--color-ink); border-radius:8px; background:var(--color-paper); color:var(--color-ink); font:750 12px/1.3 var(--font-body); white-space:nowrap; }
+.cube-poster[data-phase=solving] .lead-hand { opacity:1; transform:translate(0,0) rotate(-8deg); }
+.cube-poster[data-phase=solving] .lead-hand-art { animation:lead-hand-turn .65s ease-in-out infinite alternate; }
+@keyframes lead-hand-turn { from { transform:rotate(-3deg) translate(0,-2px); } to { transform:rotate(7deg) translate(-5px,3px); } }
+.cube-poster.is-paused .lead-hand-art { animation-play-state:paused; }
+@media(max-width:700px) { .lead-hand { width:136px; right:-12px; top:40%; }.lead-hand>span { font-size:11px; right:5px; } }
+@media(prefers-reduced-motion:reduce) { .lead-hand { display:none; } }
