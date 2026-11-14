@@ -26,10 +26,10 @@
   <meta name="twitter:image:alt" content="Venture Layer. Від задуму до самостійного продукту. Різнокольоровий кубик як образ шляху проєкту.">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="preload" href="../hallmark/nunito.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="../hallmark/styles.css?v=20261113-feedback"><link rel="stylesheet" href="cube.css?v=20261114-descriptions">
+  <link rel="stylesheet" href="../hallmark/styles.css?v=20261113-feedback"><link rel="stylesheet" href="cube.css?v=20261114-random-sources">
   <script src="../hallmark/app.js?v=20261113-feedback" defer></script>
   <script src="../references.js?v=20261113-feedback" defer></script>
-<script type="importmap">{"imports": {"cubing/alg": "./vendor/cubing/alg/index.js", "cubing/twisty": "./vendor/cubing/twisty/index.js", "cubing/puzzles": "./vendor/cubing/puzzles/index.js", "three/": "./vendor/three/"}}</script><script type="module" src="cube.js?v=20261114-descriptions"></script></head>
+<script type="importmap">{"imports": {"cubing/alg": "./vendor/cubing/alg/index.js", "cubing/twisty": "./vendor/cubing/twisty/index.js", "cubing/puzzles": "./vendor/cubing/puzzles/index.js", "three/": "./vendor/three/"}}</script><script type="module" src="cube.js?v=20261114-random-sources"></script></head>
 <body>
 <a class="skip-link" href="#main">До змісту</a>
 <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -54,13 +54,13 @@
 <main id="main">
 <section class="hero section-wrap cube-hero" id="top" aria-labelledby="hero-title">
 <div class="hero-copy">
-<h1 id="hero-title">Спочатку —<br> просто «хочу».</h1>
-<p class="hero-subtitle">У студента, кафедри чи компанії є своя задача. З неї може початися продукт для людей у всьому світі.</p>
-<p class="hero-description">Venture Layer допомагає університетським командам пройти цей шлях.</p>
+<h1 id="hero-title">Від задуму<br> до самостійного<br> продукту.</h1>
+<p class="hero-subtitle">У кожного проєкту — свій початок. Venture Lead допомагає команді визначити наступний крок.</p>
+<p class="hero-description">Venture Layer допомагає університетським командам перевірити свої задуми й розвивати продукти.</p>
 <div class="cube-hero-actions"><a class="button button-dark" href="#journey">Як це працює <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="cube-identity-link" href="identity.html">Кубик як айдентика</a></div>
 </div>
 <div class="cube-poster" aria-label="Як проста потреба може вирости у стартап" data-phase="idea">
-<div class="cube-poster-top"><span id="cube-origin">Від студента</span><span class="cube-phase-tag" id="cube-phase-tag">Просте бажання</span></div>
+<div class="cube-poster-top"><a class="cube-source-badge" id="cube-source-link" href="#source-initiative" aria-label="Про джерело: Від людини чи групи"><span class="cube-source-letter" id="cube-source-letter">В</span><svg aria-hidden="true"><use id="cube-source-icon" href="#i-star"></use></svg><span class="cube-source-caption"><small>Джерело</small><strong id="cube-origin">Від людини чи групи</strong></span><span class="cube-source-arrow" aria-hidden="true">↗</span></a><span class="cube-phase-tag" id="cube-phase-tag">Просте бажання</span></div>
 <div class="cube-view" id="cube-view" role="img" aria-label="Розібраний кубик збирається, а початкова потреба перетворюється на задум стартапу"><img class="cube-fallback" src="logo.svg" alt="" width="420" height="440"><div class="cube-player-host" id="cube-player-host" aria-hidden="true"></div><div class="cube-sparks" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i><i>✧</i></div></div>
 <div class="cube-caption" id="cube-caption"><p class="cube-example-kind" id="cube-example-kind">Усе починається з…</p><h2 id="cube-case-name">«Хочу знати, коли перенесли пару»</h2><p id="cube-case-description"></p></div>
 <div class="cube-poster-bottom"><span>Уявні історії</span><button type="button" class="cube-motion-toggle" id="cube-motion-toggle" aria-pressed="false" aria-label="Призупинити анімацію" title="Призупинити анімацію"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="cube-pause-icon" d="M7 5v10M13 5v10"/><path class="cube-play-icon" d="m7 4 8 6-8 6Z"/></svg></button></div>
@@ -71,9 +71,9 @@
 <section class="section-wrap sources-section" id="sources" aria-labelledby="sources-title">
   <div class="section-heading"><div><h2 id="sources-title">Звідки береться<br> <em>перша іскорка?</em></h2></div><p>Ідея може прийти трьома шляхами. Оберіть один — цей навчальний приклад супроводжуватиме нас далі.</p></div>
   <div class="source-options" role="group" aria-label="Оберіть джерело навчального прикладу">
-    <button type="button" class="source-option active" data-source="university" aria-pressed="true"><span class="source-number">А</span><svg class="source-art" aria-hidden="true"><use href="#i-house"></use></svg><h3>З університету</h3><p>Є практична задача, яку хочеться розв’язати краще.</p><span class="source-example">Наприклад, зручний розклад занять.</span><span class="source-select">Наш приклад <span aria-hidden="true">✓</span></span></button>
-    <button type="button" class="source-option" data-source="partner" aria-pressed="false"><span class="source-number">Б</span><svg class="source-art" aria-hidden="true"><use href="#i-people"></use></svg><h3>Від партнера</h3><p>Організація приносить задачу з реального життя.</p><span class="source-example">Наприклад, довге очікування в черзі.</span><span class="source-select">Обрати цю історію <span aria-hidden="true">+</span></span></button>
-    <button type="button" class="source-option" data-source="initiative" aria-pressed="false"><span class="source-number">В</span><svg class="source-art" aria-hidden="true"><use href="#i-star"></use></svg><h3>Від людини чи групи</h3><p>Студент або дослідницька група має власний задум.</p><span class="source-example">Наприклад, пошук у власних нотатках.</span><span class="source-select">Обрати цю історію <span aria-hidden="true">+</span></span></button>
+    <button type="button" class="source-option active" data-source="university" id="source-university" aria-pressed="true"><span class="source-number">А</span><svg class="source-art" aria-hidden="true"><use href="#i-house"></use></svg><h3>З університету</h3><p>Є практична задача, яку хочеться розв’язати краще.</p><span class="source-example">Наприклад, зручний розклад занять.</span><span class="source-select">Наш приклад <span aria-hidden="true">✓</span></span></button>
+    <button type="button" class="source-option" data-source="partner" id="source-partner" aria-pressed="false"><span class="source-number">Б</span><svg class="source-art" aria-hidden="true"><use href="#i-people"></use></svg><h3>Від партнера</h3><p>Організація приносить задачу з реального життя.</p><span class="source-example">Наприклад, довге очікування в черзі.</span><span class="source-select">Обрати цю історію <span aria-hidden="true">+</span></span></button>
+    <button type="button" class="source-option" data-source="initiative" id="source-initiative" aria-pressed="false"><span class="source-number">В</span><svg class="source-art" aria-hidden="true"><use href="#i-star"></use></svg><h3>Від людини чи групи</h3><p>Студент або дослідницька група має власний задум.</p><span class="source-example">Наприклад, пошук у власних нотатках.</span><span class="source-select">Обрати цю історію <span aria-hidden="true">+</span></span></button>
   </div>
   <div class="entry-note"><svg aria-hidden="true"><use href="#i-seed"></use></svg><div><h3>Спочатку — обрати, що варто дослідити</h3><p>Venture Lead вивчає доступні можливості та їхній потенціал. Коли бере можливість до портфеля, відкриваються її журнал і перша стадія — Ideation. Це відбувається до G1.</p></div><span class="note-side">портфель =<br> можливості, які веде Lead</span></div>
 </section>
