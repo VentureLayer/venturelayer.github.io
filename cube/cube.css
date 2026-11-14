@@ -128,3 +128,6 @@
 .cube-poster.is-paused .lead-hand-art { animation-play-state:paused; }
 @media(max-width:700px) { .lead-hand { width:100px; right:-1%; top:44%; }.lead-hand>span { right:0; bottom:-12px; font-size:10px; } }
 @media(prefers-reduced-motion:reduce) { .lead-hand { display:none; } }
+
+.stage-cube-progress{display:flex;flex-direction:column;align-items:center;gap:8px;height:100%}.stage-cube-progress img{width:auto;height:calc(100% - 30px);max-width:100%;object-fit:contain}.stage-cube-progress span{font-size:var(--text-sm);font-weight:700;color:var(--color-ink)}
+@media(prefers-reduced-motion:no-preference){.stage-cube-progress img{animation:stage-cube-arrive .55s ease-out both}@keyframes stage-cube-arrive{from{opacity:.4;transform:rotate(-8deg) scale(.9)}to{opacity:1;transform:rotate(0) scale(1)}}}
