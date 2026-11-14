@@ -135,15 +135,3 @@
 .cube-hero .hero-pay-label{display:block;font-size:clamp(1.3rem,2vw,1.7rem);font-weight:800;line-height:1.25;color:var(--color-ink);letter-spacing:-.015em;text-transform:none;max-width:32ch;margin-bottom:var(--space-md)}
 
 .cube-hero~.sources-section .source-option{cursor:default}.source-options article.source-option:hover{background:var(--grain),var(--color-paper-2)}.source-options article.source-option:active{transform:none}
-
-/* Keep the poster at the full column width as its captions change. */
-.cube-poster{width:100%;justify-self:stretch}
-@media(max-width:700px){.cube-hero{align-items:stretch}.cube-hero>.cube-poster{align-self:stretch}}
-
-/* Landscape poster, independent of the height of the text column. */
-@media(min-width:701px){
-.cube-hero>.cube-poster{aspect-ratio:1.15;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;align-self:center}
-.cube-poster .cube-view{height:auto;min-height:0}
-.cube-poster .cube-visual{height:100%;width:auto;aspect-ratio:1}
-.cube-poster .cube-caption{min-height:0;padding-top:var(--space-sm)}
-}
