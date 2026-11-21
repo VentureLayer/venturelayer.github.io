@@ -1,12 +1,12 @@
 /* This edition preserves the cube guide’s layout, palette and animation. */
-.cube-hero h1{font-size:clamp(2.6rem,4.15vw,4.1rem);max-width:17ch}
+.cube-hero h1{font-size:clamp(2.35rem,3.7vw,3.65rem);max-width:17ch}
 .portfolio-team-note{font-size:var(--text-md);line-height:1.6;color:var(--color-muted);max-width:40ch;margin-top:var(--space-md)}
 .portfolio-work{padding-block:var(--section-gap-s)}
 .portfolio-work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-xl)}
 .portfolio-work-grid>div{border-top:2px solid var(--color-ink);padding-top:var(--space-lg)}
 .portfolio-work-grid h3{font-size:var(--text-title);line-height:1.25;margin-bottom:var(--space-md)}
 .portfolio-work-grid p{font-size:var(--text-md);line-height:1.65;color:var(--color-muted)}
-@media(max-width:700px){.cube-hero h1{font-size:clamp(2.5rem,9vw,3.7rem);max-width:18ch}.portfolio-work-grid{grid-template-columns:1fr;gap:var(--space-xl)}}
+@media(max-width:700px){.cube-hero h1{font-size:clamp(2.25rem,8vw,3.3rem);max-width:18ch}.portfolio-work-grid{grid-template-columns:1fr;gap:var(--space-xl)}}
 
 .portfolio-readiness{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);border-top:1px solid var(--color-rule);margin-top:var(--space-xl);padding-top:var(--space-lg)}.portfolio-readiness p{font-size:var(--text-md);line-height:1.6;color:var(--color-muted)}.portfolio-readiness b{color:var(--color-ink)}@media(max-width:700px){.portfolio-readiness{grid-template-columns:1fr;gap:var(--space-md)}}
 
