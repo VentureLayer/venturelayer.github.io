@@ -89,3 +89,10 @@ Cube використовує штатний picture-режим TwistyPlayer т�
 Статичне прев’ю `cube/initial-frame.png` експортоване штатним `TwistyPlayer.experimentalScreenshot` з тієї самої сцени й тієї самої початкової розкладки, що й анімація. Перший стан кубика фіксований; порядок історій залишається випадковим. Прев’ю й 3D-полотно мають спільну квадратну область, масштаб і рух. Перемикання відбувається після підготовки першого кадру, без перехресного розчинення; штатну підсвітку появи кубика вимкнено.
 
 У фінальних заголовках усіх дев’яти кейсів одразу вказано тип продукту: сервіс або платформа. Менший текст пояснює його можливості й користувачів.
+
+
+## Portfolio edition
+
+https://venturelayer.github.io/portfolio/ is a separate recruitment edition based on `/cube/`. It preserves the established cube animation, palette, layout, stage illustrations, remuneration and White Paper links. Its emphasis is the Venture Lead’s selection of projects, portfolio decisions, team responsibility, preparation and pilot workload. The original `/cube/` edition remains unchanged.
+
+`portfolio/app.js` and `portfolio/cube.js` keep edition-specific copy and initial role selection separate. Visual assets and vendor libraries are reused from `cube/`, while criteria, references and bibliography stay shared. `portfolio/social-preview.html` is the source for its 1200 × 630 social preview. No registration endpoint, confirmed real-project list or unapproved pilot commitments are introduced.
