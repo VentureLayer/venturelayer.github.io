@@ -9,3 +9,9 @@
 @media(max-width:700px){.cube-hero h1{font-size:clamp(2.5rem,9vw,3.7rem);max-width:18ch}.portfolio-work-grid{grid-template-columns:1fr;gap:var(--space-xl)}}
 
 .portfolio-readiness{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);border-top:1px solid var(--color-rule);margin-top:var(--space-xl);padding-top:var(--space-lg)}.portfolio-readiness p{font-size:var(--text-md);line-height:1.6;color:var(--color-muted)}.portfolio-readiness b{color:var(--color-ink)}@media(max-width:700px){.portfolio-readiness{grid-template-columns:1fr;gap:var(--space-md)}}
+
+.hero-pay-total{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 12px;margin-block:12px 16px;color:var(--color-ink)}
+.hero-pay-up-to{font-size:1.5rem;font-weight:750}.hero-pay-total strong{font:800 clamp(4.5rem,7vw,6rem)/1 var(--font-body);letter-spacing:-.055em}.hero-pay-period{font-size:1rem}
+.hero-pay-breakdown{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;border-top:1px solid var(--color-ink);padding-top:12px;margin-bottom:12px;font-size:1rem;line-height:1.5}.hero-pay-breakdown b{font-size:1.25rem;font-weight:800}
+.hero-pay .hero-pay-terms{font-size:.875rem;line-height:1.5}
+@media(max-width:420px){.hero-pay-total{gap:6px 10px}.hero-pay-total strong{font-size:4.5rem}.hero-pay-period{flex-basis:100%}.hero-pay-breakdown{column-gap:8px}.hero-pay-breakdown>span:last-child{flex:1;min-width:150px}}
